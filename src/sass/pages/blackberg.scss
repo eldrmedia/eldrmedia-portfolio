@@ -1,6 +1,7 @@
 /*-----------------------------------------------------------------------------------
 	blackberg.scss
 -----------------------------------------------------------------------------------*/
+@use 'sass:color';
 
 $brand-primary: #006154;    	// Green
 $brand-secondary: #A88F4D;	    // Brass
@@ -56,6 +57,13 @@ $brand-success: #31D158;		        // Green
 
     }
 
+    a.link {
+        color: $brand-primary;
+        text-decoration: underline !important;
+    
+        &:hover {
+            color: color.adjust($brand-primary, $lightness: 5%);
+        }
+    }
 
 }
-

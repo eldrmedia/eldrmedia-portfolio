@@ -103,7 +103,7 @@
 
 								<div class="col-12 col-md-8">
 	
-									<p>As the UI/UX Design Lead and Web Team Manager at Blackberg Group, I led the end-to-end design and development of our internal digital tools and public-facing platforms. From building a <a href="/work/blackberg-group/design-system/">custom design system</a> to launching a <a href="/work/blackberg-group/bd-portal/">business development portal</a> and redesigning our main <a href="/work/blackberg-group/website/">website</a>, these projects reflect my team's commitment to innovation, accessibility, and impact within the organization.</p>
+									<p>As the UI/UX Design Lead and Web Team Manager at Blackberg Group, I led the end-to-end design and development of our internal digital tools and public-facing platforms. From building a <a href="/work/blackberg-group/design-system/" class="link">custom design system</a> to launching a <a href="/work/blackberg-group/bd-portal/" class="link">business development portal</a> and redesigning our main <a href="/work/blackberg-group/website/" class="link">website</a>, these projects reflect my team's commitment to innovation, accessibility, and impact within the organization.</p>
 	
 								</div>
 
