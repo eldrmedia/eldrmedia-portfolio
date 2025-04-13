@@ -17,9 +17,9 @@ jobs:
       - name: Deploy to FTP server
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
         with:
-          server: ${{ secrets.ftp_server }}
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
+          server: ftp.eldrmedia.com
+          username: development@eldrmedia.com
+          password: ${{ secrets.FTP_PASSWORD }}
           local-dir: /  # change to your build output folder
           server-dir: /  # change to your server directory
           exclude: |
