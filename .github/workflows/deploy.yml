@@ -20,7 +20,7 @@ jobs:
           username: development@eldrmedia.com
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./  # change to your build output folder
-          server-dir: /public_html/  # change to your server directory
+          server-dir: /  # change to your server directory
           exclude: |
             **/.git*
             **/.github*
