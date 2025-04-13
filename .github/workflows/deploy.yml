@@ -6,17 +6,16 @@ on:
       - '**'
 
 jobs:
-  ftp-deploy:
-    name: Upload site to FTP server
+  web-deploy:
+    name: 🎉 Deploy
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout source
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
 
-      - name: Deploy to FTP server
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.4
-        with:
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+      with:
           server: ftp.eldrmedia.com
           username: development@eldrmedia.com
           password: Welder2699!
