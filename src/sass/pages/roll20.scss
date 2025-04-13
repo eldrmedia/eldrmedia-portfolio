@@ -1,0 +1,114 @@
+/*-----------------------------------------------------------------------------------
+	roll20.scss
+-----------------------------------------------------------------------------------*/
+
+$brand-primary: #EC008C;    	// Pink
+$brand-secondary: #702C91;	    // Purple
+$brand-tertiary: #54B8EC;	    // Light Blue
+$brand-warning: #FF994D;		        // Orange
+$brand-success: #31D158;		        // Green
+
+
+.roll20 {
+
+    .brand-primary { color: $brand-primary; }
+    .brand-secondary { color: $brand-secondary; }
+    .brand-tertiary { color: $brand-tertiary; }
+    .brand-warning { color: $brand-warning; }
+    .brand-success { color: $brand-success; }
+
+    .hero {
+        position: relative;
+
+        &__background {
+            background-color: #F2D9FF
+        }
+
+        &__background-element {
+            position: absolute;
+            overflow: hidden;
+            height: 100%;
+            width: 100%;
+            background: url('/resources/images/projects/roll20/main/hero-bg-element.png') top left no-repeat;
+            background-size: contain;
+        }
+
+        &__background-divider {
+            width: 100%;
+            min-height: 1px;
+        }
+
+        .hero__content {
+        }
+
+        .hero__content-element {
+
+            @include media-breakpoint-up(sm) {
+                margin-left: -80px;
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-left: -30px;
+            }
+
+        }
+
+    }
+
+
+    .card {
+
+        &__featured-project {
+            border: 0;
+
+            &.primary { box-shadow: inset 0 -3px 0px $brand-primary; }
+            &.secondary { box-shadow: inset 0 -3px 0px $brand-secondary; }
+            &.tertiary { box-shadow: inset 0 -3px 0px $brand-tertiary; }
+            &.warning { box-shadow: inset 0 -3px 0px $brand-warning; }
+            &.success { box-shadow: inset 0 -3px 0px $brand-success; }
+        }
+    }
+
+}
+
+.dice_animation{
+    margin-bottom: 0;
+    width: 100%;
+    li{
+        position: absolute;
+        &:nth-child(1){
+            top: 220px;
+            left: 170px;
+            animation: jurk 4s 5s linear infinite alternate;
+        }
+        &:nth-child(2){
+            top: 420px;
+            left: 370px;
+            animation: jurk 4s 2s linear infinite alternate;
+        }
+        &:nth-child(3){
+            left: 120px;
+            top: 50%;
+            animation: jurk 3s 3s linear infinite alternate;
+        }
+        &:nth-child(6){
+            top: 220px;
+            right: 170px;
+            animation: jurk 5s 3s linear infinite alternate;
+        }
+        &:nth-child(4){
+            top: 500px;
+            right: 280px;
+            animation: jurk 4s 2s linear infinite alternate;
+        }
+        &:nth-child(5){
+            right: 120px;
+            top: 380px;
+            animation: jurk 8s 2s linear infinite alternate;
+        }
+    }
+}
+
+#primary-menu ul li:hover>a, #primary-menu ul li.current>a {
+    color: $brand-primary;
+}

@@ -1,0 +1,93 @@
+/*-----------------------------------------------------------------------------------
+	roll20-design-system.scss
+-----------------------------------------------------------------------------------*/
+
+$brand-primary: #EC008C;    	// Pink
+$brand-secondary: #702C91;	    // Purple
+$brand-tertiary: #54B8EC;	    // Light Blue
+$brand-warning: #FF994D;		        // Orange
+$brand-success: #31D158;		        // Green
+
+$gray-100: #fafbfe;
+$gray-200: #eff2f7;
+$gray-300: #e5e9f2;
+
+.roll20-design-system {
+    overflow-x: hidden;
+
+    .brand-primary { color: $brand-primary; }
+    .brand-secondary { color: $brand-secondary; }
+    .brand-tertiary { color: $brand-tertiary; }
+    .brand-warning { color: $brand-warning; }
+    .brand-success { color: $brand-success; }
+
+    .gray-100 { background-color: $gray-100; }
+    .gray-200 { background-color: $gray-200; }
+    .gray-300 { background-color: $gray-300; }
+
+    #primary-menu ul li>a {
+        color: #ddd;
+        @include media-breakpoint-down(md) {
+            color: #222;
+        }
+
+    }
+
+    #primary-menu ul li:hover>a, #primary-menu ul li.current>a {
+        color: #fff;
+        @include media-breakpoint-down(md) {
+            color: $brand-secondary;
+        }
+    }
+
+    .hero-client,
+    .hero-title,
+    .hero-skills {
+        color: #fff;
+    }
+
+    
+
+    .nav-pills {
+
+        .nav-link {
+            padding: 0;
+            border-radius: 0;
+            color: #555;
+
+            .card {
+                transition: .3s ease;
+            }
+
+            &.active {
+                color: #555;
+                background: none;
+
+                .card {
+                    border: 1px solid rgba(228,3,141,0.17);
+                    box-shadow: 0 14px 30px 0 rgba(102,0,47,0.16);
+                }
+
+                .nav-link-title {
+                    color: $brand-primary;
+                }
+
+            }
+
+            .nav-link-title {
+                margin: 0;
+                @include media-breakpoint-down(xs) {
+                    font-size: 11px;
+                }
+        
+            }
+
+            .nav-link-description {
+                font-size: 14px;
+                line-height: 1.5 !important;
+            }
+
+        }
+
+    }
+}

@@ -1,0 +1,404 @@
+/*-----------------------------------------------------------------------------------
+	ebizautos_capture.scss
+-----------------------------------------------------------------------------------*/
+
+.ebizautos-capture {
+
+	.hero {
+		
+		.hero__background {
+			background-image: linear-gradient(155deg, #46D2FD 0%, #5351F0 100%);
+		}
+
+		.hero__content {
+			z-index: 2;
+		}
+		
+	}
+
+	.background-element {
+		position: absolute;
+		z-index: 1;
+		overflow: hidden;
+					
+					
+		.background-element-wrapper {
+			position: relative;
+			height: auto;
+		}
+
+	}
+	
+	.competitive-analysis {
+		background-color: #46D2FD;
+		background-image: linear-gradient(-180deg, #46D2FD 0%, #00AFFF 88%);	
+	}
+	
+	.user-personas {
+		background-color: rgba(256,256,256,1);
+		background-image: linear-gradient(132deg, rgba(256,256,256,1) 78%, rgba(74,166,248,0.2) 100%);
+		
+		.persona__content {
+
+			&.aaron-hall {
+				background-image: url('/resources/images/projects/capture/user-personas/aaron-hall.jpg');
+			}
+
+			&.fionn-garrett {
+				background-image: url('/resources/images/projects/capture/user-personas/fionn-garrett.jpg');
+			}
+				
+			.content__title-section {
+				background-color: #5351F0;
+				padding: 15px;
+				width: 44%;	
+				transform: translate(-20px,20px);
+			}
+			
+		}
+
+	}
+	
+	.user-flows {
+		background-color: rgba(256,256,256,1);		
+		background-image: linear-gradient(-43deg, rgba(256,256,256,1) 78%, rgba(79,122,243,0.2) 100%);		
+	}
+	
+	.lowfi-wireframes {
+		background-color: #5250EF !important;		
+		background-image: linear-gradient(-180deg, #4974FC 0%, #5250EF 100%);
+	}	
+	
+	.highfi-mockups {
+		background-color: #5250EF !important;		
+		background-image: linear-gradient(-180deg, #5250EF 13%, #46D2FD 96%);
+		
+		.background-element {
+			width: 100%;
+			text-align: center;
+			
+			.background-element-wrapper {
+				transform: translateY(120px);
+			}
+						
+		}		
+		
+		.container {
+			position: relative;
+			z-index: 2;
+		}
+		
+	}	
+
+			
+}
+
+
+
+@media only screen and (min-width: 992px) {
+
+	.ebizautos-capture {
+	
+		.hero {
+			
+			.hero__background {
+				height: 750px;
+			}
+			
+			.background-element {
+							
+				.background-element-wrapper {
+					width: 700px;
+					transform: translateY(-200px);
+				}
+	
+			}
+	
+			.hero__content-element {
+				transform: translateY(120px);
+			}
+			
+		}
+		
+			
+		.competitive-analysis {
+			margin-bottom: -150px;
+		
+			.content__browser {
+			    height: 570px;
+			    overflow: hidden;			
+			}
+			
+		}
+		
+		.user-personas {
+			padding-top: 250px;
+		}		
+
+		.highfi-mockups {
+			
+			.background-element-wrapper {
+				transform: translateY(120px);
+			}
+			
+			.background-element-wrapper svg {
+				width: 900px;
+				height: auto;
+			}			
+			
+		}	
+				
+	}
+	
+}
+
+@media only screen and (min-width: 992px) {
+
+	.ebizautos-capture {
+
+
+	}
+		
+}
+
+@media only screen and (max-width: 991px) {
+			
+	.ebizautos-capture {
+	
+		.hero {
+			
+			.hero__background {
+				height: 600px;
+			}
+			
+			.background-element {
+							
+				.background-element-wrapper {
+					width: 600px;
+					transform: translateY(-200px);
+				}
+	
+			}
+	
+			.hero__content-element {
+				transform: scale(1.6) translateY(60px);
+			}
+			
+		}
+		
+		.competitive-analysis {
+			margin-bottom: -100px;
+			
+			.content__browser {
+			    height: 470px;
+			    overflow: hidden;			
+			}
+						
+		}		
+		
+		.user-personas {
+			padding-top: 90px;
+		}		
+
+		.lowfi-wireframes-collapse,
+		.highfi-mockups-collapse {
+			
+			.container {
+				width: 100%;
+				max-width: none;
+				padding: 0 !important;
+			}
+			
+		}
+
+		.highfi-mockups {
+
+			.background-element-wrapper svg {
+				width: 100%;
+				height: auto;
+			}			
+			
+		}	
+		
+		
+		.user-flows,
+		.user-personas {
+			
+			.background-element-wrapper svg {
+				width: 70%;
+				height: auto;
+			}			
+			
+		}
+		
+		.user-personas {
+			
+			.background-element-wrapper svg {
+				float: right;
+			}			
+			
+		}					
+		
+		.content_mobile-scroller-wrapper {
+			position: relative;	
+		
+			.content__mobile-scroller {
+				overflow-x: scroll;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
+			}
+		
+		}		
+				
+	}
+
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.ebizautos-capture {
+	
+		#introduction {
+			
+			.introduction-design {
+				
+				.row {
+					margin-right: -40px;
+					margin-left: -40px;
+				    
+					img {
+						position: relative;
+					}
+				    
+					.iphone-left {
+					    right: 20%;
+				    }
+				    
+					.iphone-middle {
+					    
+				    }
+				    
+					.iphone-right {
+					    left: 20%;
+				    }			    			    	
+				    
+				}	
+	
+			}
+			
+		}
+	
+/*
+		.competitive-analysis {
+			
+			.content__browser-image img {
+			    -webkit-animation-duration:5s;
+			    animation-duration:5s;
+			    -webkit-animation-name:scrollCoverBrowser;
+			    animation-name:scrollCoverBrowser;
+			    -webkit-animation-timing-function: cubic-bezier(1.000, 0.005, 0.305, 1.000);
+			    animation-timing-function: cubic-bezier(1.000, 0.005, 0.305, 1.000); 
+			    -webkit-animation-direction: alternate; 
+			            animation-direction: alternate;
+			    -webkit-animation-iteration-count: infinite;
+			            animation-iteration-count: infinite;
+			    -webkit-animation-fill-mode: none;
+			            animation-fill-mode: none;
+				
+			}
+				
+		}
+*/			
+	
+	}
+	
+}
+
+@media only screen and (max-width: 767px) {
+
+	.ebizautos-capture {
+	
+		.hero {
+			
+			.hero__background {
+				height: auto;
+			}
+			
+			.background-element {
+							
+				.background-element-wrapper {
+					width: 400px;
+					transform: translateY(-100px);
+				}
+	
+			}
+	
+			.hero__content-element {
+				transform: scale(1.4) translateY(0px);
+			}
+			
+		}
+		
+		.competitive-analysis {
+
+			.content__browser {
+			    height: 360px;
+			    overflow: hidden;			
+			}		
+			
+		}
+				
+	}
+	
+}
+
+
+	
+	@keyframes scrollCoverBrowser {
+	
+	    10% {
+	        -webkit-transform: translateY(0%);
+	            -ms-transform: translateY(0%);
+	                transform: translateY(0%);
+	    }
+	
+	    50% {
+	        -webkit-transform: translateY(calc(-50% + 285px));
+	            -ms-transform: translateY(calc(-50% + 285px));
+	                transform: translateY(calc(-50% + 285px));
+	    }
+	
+	    100% {
+	        -webkit-transform: translateY(calc(-100% + 570px));
+	            -ms-transform: translateY(calc(-100% + 570px));
+	                transform: translateY(calc(-100% + 570px));
+	    }
+	
+	}
+	
+	@-webkit-keyframes scrollCoverBrowser {
+	    10% {
+	        -webkit-transform: translateY(0%);
+	            -ms-transform: translateY(0%);
+	                transform: translateY(0%);
+	    }
+	
+	    50% {
+	        -webkit-transform: translateY(calc(-50% + 285px));
+	            -ms-transform: translateY(calc(-50% + 285px));
+	                transform: translateY(calc(-50% + 285px));
+	    }
+	
+	    100% {
+	        -webkit-transform: translateY(calc(-100% + 570px));
+	            -ms-transform: translateY(calc(-100% + 570px));
+	                transform: translateY(calc(-100% + 570px));
+	    }
+	
+	}

@@ -1,0 +1,395 @@
+/*-----------------------------------------------------------------------------------
+	roll20.scss
+-----------------------------------------------------------------------------------*/
+
+$brand-primary: #4E30A1;    	// Royal Purple
+$brand-secondary: #A88F4D;	    // Brass
+$brand-tertiary: #7259EF;	    // Ultraviolet
+$brand-warning: #FF994D;		        // Orange
+$brand-success: #31D158;		        // Green
+
+.quorum-design-system {
+
+    .brand-primary { color: $brand-primary; fill: $brand-primary;  }
+    .brand-secondary { color: $brand-secondary; fill: $brand-secondary; }
+    .brand-tertiary { color: $brand-tertiary; fill: $brand-tertiary }
+
+    .bg-primary { background-color: $brand-primary; }
+    .bg-secondary { background-color: $brand-secondary; }
+    .bg-tertiary { background-color: $brand-tertiary; }
+
+    .bg-soft-primary { background: #ECE8F8; }
+
+    .hero {
+
+        &__background {
+			background: rgb(34,31,84);
+			background: linear-gradient(133deg, rgba(34,31,84,1) 8%, rgba(83,48,161,1) 77%);
+            
+            width: 100%;
+            position: relative;
+            overflow: hidden;    
+
+            &-element {
+             position: absolute;
+             top: 50%;
+             left: 50%;
+             z-index: 5;
+
+            @include media-breakpoint-up(md) {   
+                width: 100%;   
+                transform: scale(1) translate(-50%,-50%);
+            }
+            @include media-breakpoint-down(md) {
+                width: 100%;
+                transform: scale(1.25) translate(-50%,-50%);
+            }
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                transform: scale(2) translate(-50%,-50%);
+            }
+
+                #globe-svg {
+                    opacity: .04;
+
+                    .pulsing-dot-1 {
+						fill: #fff;
+                        //animation: colorChange 1s 1s linear infinite;
+                        //animation: jurk 4s 2s linear infinite alternate;
+                    }
+                    .pulsing-dot-2 {
+						fill: #fff;
+                        //animation: colorChange 3s 1s linear infinite;
+                        //animation: jurk 4s 2s linear infinite alternate;
+                    }
+                    .pulsing-dot-3 {
+						fill: #fff;
+                        //animation: colorChange 2s 2s linear infinite;
+                        //animation: jurk 4s 2s linear infinite alternate;
+                    }
+
+                }
+            }
+        }
+
+        &__background-divider {
+            width: 100%;
+            min-height: 1px;
+            z-index: 5;
+        }
+
+
+        &__content {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: relative;
+            z-index: 10;
+        }
+
+        &__content-element-1 {
+
+            @include media-breakpoint-up(sm) {
+                
+            }
+
+            @include media-breakpoint-down(sm) {
+                
+            }
+        }
+
+
+
+    }
+
+
+    .card {
+
+        &__featured-project {
+            border: 0;
+
+            &.primary { box-shadow: inset 0 -3px 0px $brand-primary; }
+            &.secondary { box-shadow: inset 0 -3px 0px $brand-secondary; }
+            &.tertiary { box-shadow: inset 0 -3px 0px $brand-tertiary; }
+            &.warning { box-shadow: inset 0 -3px 0px $brand-warning; }
+            &.success { box-shadow: inset 0 -3px 0px $brand-success; }
+        }
+    }
+
+	.design-kit-section {
+		position: relative;
+
+		.container {
+			z-index: 2;
+		}
+
+		&__svg {
+			position: absolute;	
+			top: 24%;
+			right: -8%;
+			z-index: 1;
+		}
+	}
+
+		.practice-col {
+			position: relative;
+
+			img {
+				position: relative;
+				z-index: 2;
+			}
+		}
+
+		.practice-svg {
+			position: absolute;	
+			top: -10%;
+			left: -3%;
+			z-index: 1;
+			opacity: .3;
+            @include media-breakpoint-up(lg) {
+            	transform: scale(75%); 
+            }
+
+            @include media-breakpoint-down(lg) {
+                display: none;
+				
+            }
+		}
+
+	.card-governance {
+		position: relative;
+
+		&:before {
+			color: #fff;		
+			background-color: $brand-secondary;
+			font-weight: bold;		
+			font-size: 25px;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 40px;
+			height: 40px;
+			border-radius: 50%;
+			text-align: center;		
+		}
+	}
+	
+	#card1:before { content: '1'; }
+	#card2:before { content: '2'; }
+	#card3:before { content: '3'; }
+	#card4:before { content: '4'; }
+	
+	#wireframe-carousel {
+
+		.titles__slide {
+			 width: calc(100% / 4);
+			 cursor:pointer;
+			 padding: 0 0 0 0;
+			 margin:0 0 15px 0;
+			 text-align:center;
+			 opacity:.4;
+			 -webkit-transition: all 1s;
+			 -moz-transition: all 1s;
+			 transition: all 1s;
+		}
+
+		.titles__slide.swiper-slide-active{
+			position:relative;
+		    opacity:1;
+		}
+
+		.titles__slide.swiper-slide-active::after {
+		    content: '';
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    margin: auto;
+		    width: 50%;
+		    height: 4px;
+		    background: $brand-primary;
+		}
+		.slide-description {
+			background-color: #fff;
+			border-radius: 8px;
+			padding: 16px;
+		}
+		.swiper-button-next, .swiper-button-prev {
+			background-size: 16px 44px;
+			@include media-breakpoint-down(md) {
+                display: none;
+                
+            }
+		}
+		.swiper-button-shape {
+			background-color: $brand-primary;
+			width: 50px;
+			height: 50px;
+			border-radius: 50%;
+			box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+			&:hover {
+				filter: brightness(150%);
+			}
+		}
+
+	}	
+	
+
+}
+
+.fuzzy-spheres{
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 1;
+    li{
+        position: absolute;
+        width: 1000px;
+        height: 1000px;
+        border-radius: 50%;
+        display: inline-block;
+        
+        filter: blur(300px);
+
+        &:nth-child(1){
+            top: -40%;
+            left: -20%;
+            background-color: $brand-tertiary;
+            z-index: 2;            
+            animation: jurk 4s 5s linear infinite alternate;
+        }
+        &:nth-child(2){
+            bottom: -80%;
+            right: -15%;
+            background-color: $brand-secondary;
+            z-index: 1;
+            animation: jurk 4s 2s linear infinite alternate;
+        }
+    }
+}
+
+.floating-circles {
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 1;
+    padding-top: 30%;
+    li{
+        position: absolute;
+        width: 125px;
+        height: 125px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-size: cover;
+        background-position: center center;
+        background-color: #fff;
+        border-radius: .5rem;
+        filter: drop-shadow(0px 12px 20px rgba(0,0,0,0.2));
+
+        &:after {
+            position: absolute;
+            bottom: -38px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-size: .8rem;
+            font-weight: bolder;
+            text-transform: uppercase;
+        }
+
+        &:nth-child(1){
+            top: 0%;
+            left: -3%;
+            z-index: 2;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-color.png');
+
+            &:after {
+                content: 'Colors';
+            }
+       
+        }
+        &:nth-child(2){
+            top: 0%;
+            left: 23%;
+            z-index: 1;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-typography.png');
+
+            &:after {
+                content: 'Typography';
+            }
+
+        }
+        &:nth-child(3){
+            top: -10%;
+            left: 49%;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-space.png');
+
+            &:after {
+                content: 'Space';
+            }
+
+        }
+        &:nth-child(4){
+            top: 20%;
+            left: 75%;
+            z-index: 2;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-radius.png');
+
+            &:after {
+                content: 'Radius';
+            }
+
+        }
+/*
+        &:nth-child(5){
+            bottom: -25%;
+            left: 0%;
+            z-index: 1;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-grid.png');
+
+            &:after {
+                content: 'Grid';
+            }
+
+        }
+*/
+        &:nth-child(5){
+            bottom: -30%;
+            left: 10%;
+            z-index: 2;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-components.png');
+
+            &:after {
+                content: 'Components';
+            }            
+        }
+        &:nth-child(6){
+            bottom: -20%;
+            left: 40%;
+            z-index: 1;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-data-viz.png');
+
+            &:after {
+                content: 'Data Viz';
+            }
+
+        }
+        &:nth-child(7){
+            bottom: -10%;
+            left: 77%;
+            z-index: 1;
+            background-image: url('/resources/images/projects/quorum/design-system/circle-elevation.png');
+
+            &:after {
+                content: 'Elevation';
+            }
+
+        }                
+    }
+}
+
+#primary-menu ul li:hover>a, #primary-menu ul li.current>a {
+    color: $brand-primary;
+}

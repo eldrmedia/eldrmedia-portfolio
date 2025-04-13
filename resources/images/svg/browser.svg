@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1232px" height="816px" viewBox="0 0 1232 816" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Browser Frame</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Subtle_Devices" transform="translate(-807.000000, -1770.000000)" fill="#F8F8F8" stroke="#F3F3F3" stroke-width="2">
+            <rect id="Browser-Frame" transform="translate(1423.000000, 2178.000000) rotate(-90.000000) translate(-1423.000000, -2178.000000) " x="1016" y="1563" width="814" height="1230" rx="4"></rect>
+        </g>
+    </g>
+</svg>

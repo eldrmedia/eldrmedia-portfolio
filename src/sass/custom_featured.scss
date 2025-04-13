@@ -1,0 +1,360 @@
+/*-----------------------------------------------------------------------------------
+	custom_featured.scss
+-----------------------------------------------------------------------------------*/
+
+.featured {
+	position: relative;
+
+	.featured-element {
+		position: relative;
+		padding: 10px 0 70px 0;
+		margin: 100px 0 200px 0;
+	}
+
+	.featured__background-image {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		border-radius: 4px;
+	}
+
+	.featured__device-content {
+		position: relative;
+	}
+
+	.featured__device {
+
+		&.browser {
+
+			.featured__device-content {
+				text-align: right;
+				width: 100%;
+				max-width: 700px;
+
+				img {
+					position: relative;
+					z-index: 1;
+				}
+
+				.featured__device-image {
+					position: absolute;
+					top: 7%;
+					left: 2px;
+					right: 2px;
+					bottom: 2px;
+					z-index: 2;
+				}
+
+
+			}
+
+		}
+
+		&.iphonex {
+
+			.featured__device-content {
+				float: left;
+				text-align: center;
+
+				img {
+					position: relative;
+					width: 100%;
+					max-height: 380px;
+					z-index: 2;
+				}
+
+				.featured__device-image-1,
+				.featured__device-image-2 {
+					position: absolute;
+					top: 0;
+					bottom: 0;
+					z-index: 1;
+					width: 100%;
+					height: 100%;
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center center;
+					transform: scale(.95);
+				}
+
+
+			}
+
+		}
+
+	}
+
+	.featured-element__roll20 {
+
+		.featured__background-image {
+			background-image: url('/resources/images/home/featured-roll20-bg.jpg');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/home/featured-roll20-desktop.jpg');
+		}
+
+	}
+
+	.featured-element__vha {
+
+		.featured__background-image {
+			background-image: url('/resources/images/home/featured-vha-bg.jpg');
+		}
+
+		.featured__device-image-1 {
+			background-image: url('/resources/images/home/featured-vha-desktop-1.png');
+		}
+
+		.featured__device-image-2 {
+			background-image: url('/resources/images/home/featured-vha-desktop-2.png');
+		}
+
+	}
+
+	.featured-element__blackberg-group {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-bg.jpg');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg.jpg');
+		}
+
+	}
+
+	.featured-element__blackberg-group-ds {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-ds-bg.jpg');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-ds.jpg');
+		}
+
+	}
+
+	.featured-element__blackberg-group-bd-portal {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-portal-bg.jpg');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-portal.jpg');
+		}
+
+	}
+
+	.featured-element__blackberg-group-website {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-website-bg.jpg');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/blackberg-group/main/featured-blackberg-website.jpg');
+		}
+
+	}
+
+	.featured-element__quorum {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/quorum/main/featured-quorum-ds-bg.png');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/quorum/main/featured-quorum-ds-desktop.png');
+		}
+
+	}
+
+	.featured-element__quorum-wrapped {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/quorum/main/featured-quorum-wrapped-bg.png');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/quorum/main/featured-quorum-wrapped-desktop.png');
+		}
+
+	}
+
+	.featured-element__quorum-ds {
+
+		.featured__background-image {
+			background-image: url('/resources/images/projects/quorum/main/featured-quorum-ds-bg.png');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/projects/quorum/main/featured-quorum-ds-desktop.png');
+		}
+
+	}
+	
+	.featured-element__carsense {
+
+		.featured__background-image {
+			background-image: url('/resources/images/home/featured-foundation-bg.jpg');
+		}
+
+		.featured__device-image {
+			background-image: url('/resources/images/home/featured-foundation-desktop.jpg');
+		}
+
+	}
+
+	.featured-element__capture {
+
+		.featured__background-image {
+			background-image: url('/resources/images/home/featured-capture-bg.jpg');
+		}
+
+		.featured__device-image-1 {
+			background-image: url('/resources/images/home/featured-capture-1-desktop.jpg');
+		}
+
+		.featured__device-image-2 {
+			background-image: url('/resources/images/home/featured-capture-2-desktop.jpg');
+		}
+
+	}
+
+	.featured-element__chilld-bags {
+
+		.featured__background-image {
+			background-image: url('/resources/images/home/featured-chilld-bags-bg.jpg');
+		}
+
+		.featured__device-image-1 {
+			background-image: url('/resources/images/home/featured-chilld-bags-1-desktop.jpg');
+		}
+
+		.featured__device-image-2 {
+			background-image: url('/resources/images/home/featured-chilld-bags-2-desktop.jpg');
+		}
+
+	}
+
+}
+
+@media only screen and (min-width: 992px) {
+
+	.featured {
+
+		.featured__container {
+			padding: 0;
+			position: relative;
+		}
+
+		.featured__device {
+
+			&.iphonex {
+
+				.featured__device-content {
+
+					img {
+
+						&.large {
+							max-height: 480px;
+						}
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 991px) {
+
+	.featured {
+
+		.featured-element__chilld-bags {
+
+			.featured__device-image-1 {
+				background-image: url('/resources/images/home/featured-chilld-bags-1-mobile.jpg');
+			}
+
+			.featured__device-image-2 {
+				background-image: url('/resources/images/home/featured-chilld-bags-2-mobile.jpg');
+			}
+
+		}
+
+	}
+
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+
+
+}
+
+@media only screen and (min-width: 768px) {
+
+	.featured {
+
+		.featured__container {
+			padding: 0;
+			max-width: 100%;
+			position: relative;
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+	.featured {
+
+		.featured__background-image {
+			height: auto;
+			padding-top: 50%;
+
+			&::after {
+				content: '';
+				background-color: rgba(0, 0, 0, 0.2);
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				position: absolute;
+			}
+
+		}
+
+		.featured__title .title,
+		.featured__title .subtitle {
+			color: #fff;
+			text-shadow: 0px 2px 16px rgba(0, 0, 0, 0.3);
+		}
+
+	}
+
+}
+
+@media only screen and (max-width: 545px) {
+
+	.featured {
+
+		.featured__background-image {
+			height: auto;
+			padding-top: 80%;
+		}
+
+	}
+}

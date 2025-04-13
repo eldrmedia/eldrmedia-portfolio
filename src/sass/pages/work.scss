@@ -1,0 +1,251 @@
+/*-----------------------------------------------------------------------------------
+	work.scss
+-----------------------------------------------------------------------------------*/
+#project-desktop-mockups,
+#project-mobile-mockups {
+
+
+	.gallery {
+
+		.bg {
+			left: 0;
+			width: 100%;
+			background-image: url('/resources/images/projects/chilld-bags/website/mockups/bgs.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center center;
+		}
+
+		.item {
+			.device-desktop {
+				text-align: center;
+				position: relative;
+
+				> img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+				}
+
+				.device-image {
+					position: relative;
+					padding: 3% 14% 0% 15%;
+					z-index: 1;
+
+					img {
+						z-index: 2;
+						position: relative;
+					}
+
+				}
+
+			}
+
+			.device-tablet {
+				text-align: center;
+				position: relative;
+
+				> img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					padding: 0 7% 0 8%;
+				}
+
+				.device-image {
+					position: relative;
+					padding: 3% 14% 0% 15%;
+					z-index: 1;
+
+					img {
+						z-index: 2;
+						position: relative;
+					}
+
+				}
+
+			}
+
+			.device-mobile {
+				text-align: center;
+				position: relative;
+
+				> img {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					padding: 0 6%;
+				}
+
+				.device-image {
+					position: relative;
+					padding: 22% 10% 0% 11%;
+					z-index: 1;
+
+					img {
+						z-index: 2;
+						position: relative;
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+
+.work {
+	
+	.disabled {
+		opacity: .3;
+	}
+
+	.works-item {
+		
+		.works-item__content {
+			position: relative;
+			z-index: 2;
+		}
+
+		.works-item__image-wrapper {
+			border-radius: 5px;
+			border: 1px solid #eee;
+			position: relative;
+			z-index: 1;
+			
+			&.carsense {
+
+				.works-item__image {
+					margin-bottom: -120px;
+				}
+				
+			}
+			
+			&.volkswagen {
+				
+				.works-item__image-content {
+					background-color: #222;
+					font-size: 8px;
+					overflow: hidden;
+					position: relative;
+				}
+				
+			}
+			
+			&.foundation {
+				border: 0;
+			}
+			
+			.works-item__image-toolbar {
+				background-color: #DEE1E6;
+				line-height: 1rem;
+				
+				span {
+					display: inline-block;
+					height: 10px;
+					width: 10px;
+					margin-right: 3px;
+					border-radius: 10px;
+				}
+				
+				.circle-1 {
+					background-color: #FF5F57;
+				}
+				
+				.circle-2 {
+					background-color: #FFBD2D;
+				}
+				
+				.circle-3 {
+					background-color: #29C840;
+				}
+												
+			}
+			
+		}
+		
+	}
+
+}
+
+@media only screen and (max-width: 1399px) {
+
+	.work {
+	
+	
+	}
+
+
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.work {
+	
+	
+	}
+	
+}
+
+
+@media only screen and (max-width: 991px) {
+			
+	.work {
+
+		.works-item {
+	
+			.works-item__image-wrapper {
+				
+				&.carsense {
+	
+					.works-item__image {
+						margin-bottom: -80px;
+					}
+					
+				}		
+			
+			}
+		
+		}
+				
+	}
+
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+	.work {
+
+		
+				
+	}
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.work {
+
+		
+	}
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.work {
+		
+			
+	}
+	
+}

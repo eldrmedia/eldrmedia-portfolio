@@ -1,0 +1,8 @@
+user-agent: *
+disallow: /archive2018/
+disallow: /archive2018/*
+disallow: /work/
+disallow: /work/*
+disallow: /resources/images/
+disallow: /resources/images/*
+Disallow: /*.pdf

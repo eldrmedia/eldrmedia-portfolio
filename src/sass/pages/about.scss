@@ -1,0 +1,74 @@
+/*-----------------------------------------------------------------------------------
+	about.scss
+-----------------------------------------------------------------------------------*/
+
+.about {
+
+		
+}
+
+
+@media only screen and (min-width: 992px) {
+
+
+	
+}
+
+
+@media only screen and (max-width: 991px) {
+			
+	.about {
+			
+				
+	}
+
+}
+
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+	.about {
+		
+		#section-about {
+			background-image: url('/resources/images/about/about-description-desktop.jpg');
+			background-position: center center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		
+		.about-image {
+			background: none;
+		}
+		
+	}
+	
+}
+
+
+@media only screen and (max-width: 767px) {
+
+	.about {
+		
+		#section-about {
+			
+			background: none;
+			
+		}		
+		
+		.about-image {
+			padding-top: 100%;
+			background-image: url('/resources/images/about/about-description-mobile.jpg');
+			background-position: top center;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}		
+			
+	}
+	
+}

@@ -1,0 +1,76 @@
+
+/* ----------------------------------------------------------------
+
+	content.scss
+
+-----------------------------------------------------------------*/
+
+/* ----------------------------------------------------------------
+	Content
+-----------------------------------------------------------------*/
+
+#content {
+	position: relative;
+	overflow: hidden;
+	background-color: #FFF;
+
+	p { line-height: $line-height-content; }
+
+	.content-wrap {
+		position: relative;
+		padding: 80px 0;
+	}
+
+	.container { position: relative; }
+}
+
+.grid-container {
+	position: relative;
+	overflow: hidden;
+}
+
+body:not(.device-touch) .grid-container { @include transition(height .4s linear); }
+
+
+.browser-item {
+	
+	.browser-item__content {
+		position: relative;
+		z-index: 2;
+	}
+
+	.browser-item__image-wrapper {
+		border-radius: 5px;
+		border: 1px solid #eee;
+		position: relative;
+		z-index: 1;
+		
+		.browser-item__image-toolbar {
+			background-color: #DEE1E6;
+			line-height: 1rem;
+			
+			span {
+				display: inline-block;
+				height: 10px;
+				width: 10px;
+				margin-right: 3px;
+				border-radius: 10px;
+			}
+			
+			.circle-1 {
+				background-color: #FF5F57;
+			}
+			
+			.circle-2 {
+				background-color: #FFBD2D;
+			}
+			
+			.circle-3 {
+				background-color: #29C840;
+			}
+											
+		}
+		
+	}
+	
+}

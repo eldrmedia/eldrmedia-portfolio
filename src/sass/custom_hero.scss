@@ -1,0 +1,79 @@
+/*-----------------------------------------------------------------------------------
+	custom_hero.scss
+-----------------------------------------------------------------------------------*/
+
+.hero-introduction {
+
+	.hero-introduction__content {
+		text-shadow: 0px 2px 20px rgba(0, 0, 0, 0.3);
+	}
+	
+}
+
+@media only screen and (min-width: 992px) {
+	
+	.hero-introduction__background {
+		background-image: url('/resources/images/home/hero-introduction-edited.jpg');
+		background-position: top right;
+	}
+	
+	.hero-introduction__content {
+		.title {
+			font-size: 3rem;
+		}		
+	}
+	
+	
+/*
+	#header.transparent-header.with-hero {
+		margin-bottom: -80px;
+	}	
+*/
+
+}
+
+@media only screen and (max-width: 991px) {
+
+
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	
+	.hero-introduction__content {
+		.title {
+			font-size: 2.8rem;
+		}		
+	}
+	
+	.hero-introduction__background {
+		background-image: url('/resources/images/home/hero-introduction-edited.jpg');
+	}	
+
+}
+
+@media only screen and (min-width: 768px) {
+	
+	.full-screen-nojs {
+		height: 100vh;
+	}
+
+}
+
+@media only screen and (max-width: 767px) {
+
+		.hero-introduction__content {
+			background-image: -webkit-linear-gradient(rgba(0,0,0,0) 50%, rgba(0,0,0,.7) 100%);
+			.title {
+				font-size: 2rem;
+			}
+		}
+		
+		.hero-introduction__background {
+// 			background-image: url('//res.cloudinary.com/eldrmedia/image/upload/c_scale,q_auto,w_768/v1538601497/eldrmedia/home/hero-introduction-edited.jpg');
+			background-image: url('/resources/images/home/hero-introduction-edited.jpg');
+			
+// 			background-image: url('/resources/images/home/hero-introduction-mobile.jpg');
+		}
+	
+}
