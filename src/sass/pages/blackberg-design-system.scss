@@ -53,26 +53,15 @@ $brand-success: #31D158;		        // Green
             z-index: 10;
         }
 
-        &__content-element-1 {
-
-            @include media-breakpoint-up(sm) {
-                
-            }
-
-            @include media-breakpoint-down(sm) {
-                
-            }
-        }
-
     }
 
 }
 
 
-#primary-menu ul li:hover>a, #primary-menu ul li.current>a {
-    color: $brand-primary;
-}
+// #primary-menu ul li:hover>a, #primary-menu ul li.current>a {
+//     color: $brand-primary;
+// }
 
-a:not(.button,footer a) {
-    color: $brand-primary;
-}
+// a:not(.button,footer a) {
+//     color: $brand-primary;
+// }
