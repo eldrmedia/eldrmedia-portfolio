@@ -19,7 +19,7 @@ jobs:
         with:
           server: ftp.eldrmedia.com
           username: development@eldrmedia.com
-          password: ${{ secrets.FTP_PASSWORD }}
+          password: Welder2699!
           local-dir: /  # change to your build output folder
           server-dir: /  # change to your server directory
           exclude: |
