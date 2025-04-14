@@ -4,3 +4,4 @@
 *.scss.map
 .env
 config.codekit3
+.DS_STORE

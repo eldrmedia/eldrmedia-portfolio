@@ -119,7 +119,7 @@
 
 			<section id="section-about" class="py-5">
 				<div class="container">
-					<div class="row">
+					<div class="row m-0">
 						<div class="col-12">
 							<div class="row">
 								<div class="col-12 col-md-4">						
@@ -128,8 +128,6 @@
 								<div class="col-12 col-md-8">
                                     <strong>Project Overview</strong><br />
 									<p>I led the web team at Blackberg in reinventing the business development pipeline by creating a scalable, responsive design system. My UI/UX Designer and Front-end Developer roles involved leveraging Next.js, Storybook, and Bootstrap to modernize the user experience and establish a consistent UI framework.</p>
-                                    <strong>Brief Context</strong><br />
-									<p>Blackberg Group is a consulting firm specializing in communications, web development, and event management. Their internal Business Development (BD) Portal helps track new business opportunities and contract solicitations. Creating a more intuitive and responsive user experience aimed to streamline day-to-day operations and enhance how the team identifies and pursues valuable client engagements.</p>
                                     <strong>Key Objectives</strong>
                                     <ul class="pl-3">
                                         <li>Modernize the user interface for the BD pipeline.</li>
@@ -146,11 +144,11 @@
 			<section id="section-problem-solution" class="py-5">				
 				<div class="container">
 					<div class="row">
-						<div class="col-12 bg-secondary-lightest mb-5 rounded">
+						<div class="col-12 bg-secondary mb-5 rounded">
                             <div class="p-4">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <h2 class="t600">Problem</h2>
+                                        <h2>Problem</h2>
                                         <strong>Existing Pipeline Issues</strong><br/>		
                                         <p>Blackberg's BD pipeline was originally coded in Power BI, limiting the flexibility needed for custom UX solutions. As a result, the interface lacked standard design patterns and failed to provide a responsive experience. Users faced clunky workflows when searching for or adding new leads.</p>
                                         <strong>Impact on Business and Team Members</strong><br />
@@ -162,11 +160,11 @@
                                 </div>
                             </div>
                         </div>
-						<div class="col-12 bg-secondary-lightest mb-5 rounded">
+						<div class="col-12 bg-secondary-light mb-5 rounded">
                             <div class="p-4">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <h2 class="t600">Solution</h2>
+                                        <h2>Solution</h2>
                                         <strong>High-Level Approach</strong><br />		
                                         <p>I proposed building a completely new design system from the ground up. The plan involved adopting Bootstrap 5 for rapid, consistent front-end development, Next.js for building reusable interface components, and Storybook.js for thorough documentation and organization-wide alignment.</p>
                                         <strong>Key Deliverables</strong>
@@ -182,11 +180,11 @@
                                 </div>
                             </div>
                         </div>
-						<div class="col-12 bg-secondary-lightest mb-5 rounded">
+						<div class="col-12 bg-secondary-lightest rounded">
                             <div class="p-4">
                                 <div class="row">
                                     <div class="col-12 col-md-6">
-                                        <h2 class="t600">Result</h2>
+                                        <h2>Result</h2>
                                         <strong>Tangible Outcomes</strong><br />		
                                         <p>By introducing a cohesive design system, lead management tasks became more streamlined, reducing the time required to add or update records. Consistent layouts also reinforced brand alignment across all screens, while a cleaner, more responsive UI increased user satisfaction.</p>
                                         <strong>Business Impact</strong>
@@ -206,192 +204,123 @@
 				</div>
 			</section>
 
-			<section>				
-				<div class="container">
-					<div class="p-5 bg-primary rounded">
-						<div class="content__title text-center dark mb-5">
-							<span class="h6 ls3 t600 uppercase">1. Understand</span><br />								
-							<h3 class="display-4 t100-desktop">Where do we start?</h3>
-							<p>Broke the project down into multiple phases with achievable milestones.</p>
-						</div>
-						<div class="row">
-							<div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-								<div class="card shadow-xl border-0 mb-5">
-									<div class="card-body">
-										<div class="mb-5">
-											<svg width="48" height="48" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<rect opacity=".4" x="9.333" y="4" width="13.333" height="24" rx="3" class="brand-secondary"/>
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M5.333 5.667a1 1 0 0 1 1 1v18.666a1 1 0 1 1-2 0V6.667a1 1 0 0 1 1-1ZM26.666 5.667a1 1 0 0 1 1 1v18.666a1 1 0 1 1-2 0V6.667a1 1 0 0 1 1-1Z" class="brand-secondary"/>
-											</svg>									
-										</div>
-										<h5 class="mb-2">1. Alignment</h5>
-										<p class="small m-0">Met with the engineering team to gain insight into current tools and areas of improvement.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-								<div class="card shadow-xl border-0 mb-5">
-									<div class="card-body">
-										<div class="mb-5">
-											<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity=".4" d="M22.634 10.849C18.386 7.873 12.425 6.524 7.989 6.023 5.793 5.774 4 7.608 4 9.87V32.4c0 2.262 1.793 4.096 3.989 4.345 4.436.501 10.397 1.85 14.645 4.826A2.38 2.38 0 0 0 24 42V11.278a2.38 2.38 0 0 1-1.366-.43Z" class="brand-secondary"/>
-												<path fill-rule="evenodd" clip-rule="evenodd" d="M8.518 16.28a1.5 1.5 0 0 1 1.712-1.253c2.605.403 5.54 1.078 8.311 2.15a1.5 1.5 0 0 1-1.082 2.797c-2.517-.973-5.23-1.602-7.688-1.983a1.5 1.5 0 0 1-1.253-1.712ZM8.518 24.28a1.5 1.5 0 0 1 1.712-1.253c1.32.204 2.72.477 4.137.835a1.5 1.5 0 0 1-.734 2.909 42.355 42.355 0 0 0-3.862-.78 1.5 1.5 0 0 1-1.253-1.712Z" class="brand-secondary"/>
-												<path d="M25.366 10.849c4.248-2.976 10.209-4.325 14.645-4.826C42.207 5.774 44 7.608 44 9.87V32.4c0 2.262-1.793 4.096-3.989 4.345-4.436.501-10.397 1.85-14.645 4.826A2.38 2.38 0 0 1 24 42V11.278c.48 0 .958-.143 1.366-.43Z" class="brand-secondary"/>
-											</svg>
-										</div>
-										<h5 class="mb-2">2. Guidelines</h5>
-										<p class="small m-0">Wrote content guidelines for typography, color palette, and elevation.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-								<div class="card mb-5">
-									<div class="card-body">
-										<div class="mb-5">
-											<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity=".4" fill-rule="evenodd" clip-rule="evenodd" d="M24 7.077a16.85 16.85 0 0 0-7.295 1.648 1.538 1.538 0 1 1-1.329-2.775A19.928 19.928 0 0 1 24 4c3.085 0 6.01.7 8.624 1.95a1.538 1.538 0 0 1-1.329 2.775A16.85 16.85 0 0 0 24 7.077ZM8.002 14.653a1.538 1.538 0 0 1 .723 2.052A16.85 16.85 0 0 0 7.077 24c0 2.615.592 5.088 1.648 7.295a1.538 1.538 0 1 1-2.775 1.329A19.928 19.928 0 0 1 4 24c0-3.085.7-6.01 1.95-8.624a1.538 1.538 0 0 1 2.052-.723Zm31.996 0a1.538 1.538 0 0 1 2.052.723A19.928 19.928 0 0 1 44 24c0 3.085-.7 6.01-1.95 8.624a1.538 1.538 0 0 1-2.775-1.329A16.852 16.852 0 0 0 40.923 24c0-2.615-.592-5.088-1.648-7.295a1.538 1.538 0 0 1 .723-2.052ZM14.653 39.998a1.538 1.538 0 0 1 2.052-.723A16.852 16.852 0 0 0 24 40.923c2.615 0 5.088-.592 7.295-1.648a1.538 1.538 0 1 1 1.329 2.775A19.928 19.928 0 0 1 24 44c-3.085 0-6.01-.7-8.624-1.95a1.538 1.538 0 0 1-.723-2.052Z" class="brand-secondary"/>
-												<path d="M17.333 10.667a6.667 6.667 0 1 1-13.333 0 6.667 6.667 0 0 1 13.333 0ZM44 10.667c0 1.839-.745 3.504-1.95 4.71a6.667 6.667 0 1 1 1.95-4.71ZM17.333 37.333c0 1.843-.747 3.511-1.956 4.718a6.667 6.667 0 1 1 1.956-4.718ZM44 37.333a6.667 6.667 0 1 1-13.333 0 6.667 6.667 0 0 1 13.333 0Z" class="brand-secondary" />
-											</svg>											
-										</div>
-										<h5 class="mb-2">3. Components</h5>
-										<p class="small m-0">Took inventory of current components and categorized them using the Atomic Design Methodology.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-								<div class="card shadow-xl border-0 mb-5">
-									<div class="card-body">
-										<div class="mb-5">
-											<svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity=".4" d="M4 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v36a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6Z" class="brand-secondary"/>
-												<path d="M26 6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H28a2 2 0 0 1-2-2V6ZM26 28a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H28a2 2 0 0 1-2-2V28Z" class="brand-secondary"/>
-											</svg>											
-										</div>
-										<h5 class="mb-2">4. Spatial System</h5>
-										<p class="small m-0">Set standards for padding, margins, sizing, and spacing user interface (UI) elements.</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">
-								<div class="card shadow-xl border-0 mb-5">
-									<div class="card-body">
-										<div class="mb-5">
-											<svg width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity=".4" d="M22.345 43.248 6.005 35.82c-1.563-.71-1.563-2.931 0-3.642l16.34-7.427a4 4 0 0 1 3.31 0l16.34 7.427c1.562.71 1.562 2.931 0 3.642l-16.34 7.427a4 4 0 0 1-3.31 0Z" class="brand-secondary"/>
-												<path d="M22.345 33.248 6.005 25.82c-1.563-.71-1.563-2.931 0-3.642l16.34-7.427a4 4 0 0 1 3.31 0l16.34 7.427c1.562.71 1.562 2.931 0 3.642l-16.34 7.427a4 4 0 0 1-3.31 0Z" class="brand-secondary"/>
-												<path opacity=".4" d="M22.345 23.248 6.005 15.82c-1.563-.71-1.563-2.931 0-3.642l16.34-7.427a4 4 0 0 1 3.31 0l16.34 7.427c1.562.71 1.562 2.931 0 3.642l-16.34 7.427a4 4 0 0 1-3.31 0Z" class="brand-secondary" />
-											</svg>											
-										</div>
-										<h5 class="mb-2">5. Organisms</h5>
-										<p class="small m-0">Identified UI patterns as organisms and created guidelines for their usage.</p>
-									</div>
-								</div>			
-							</div>
-							<div class="col-12 col-sm-6 col-lg-4 d-flex align-items-stretch">							
-								<div class="card shadow-xl border-0 mb-5">
-									<div class="card-body">
-										<div class="mb-5">
-											<svg width="48" height="48" viewbox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-												<path opacity=".4" d="M21 15.901h-9.68a.927.927 0 0 1-.73-.364l-2.337-3a1.044 1.044 0 0 1 0-1.271l2.337-3a.927.927 0 0 1 .73-.365H21v8ZM21 31.901H8.156c-.271 0-.53-.105-.722-.293l-3.062-3a.986.986 0 0 1 0-1.414l3.062-3c.191-.187.45-.293.722-.293H21v8ZM27 15.901h12.859c.27 0 .53.106.722.293l3.065 3a.985.985 0 0 1 0 1.415l-3.065 3a1.033 1.033 0 0 1-.722.292h-12.86v-8Z" class="brand-secondary" />
-												<path d="M21 5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v38a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1V5Z" class="brand-secondary" />
-											</svg>										
-										</div>
-										<h5 class="mb-2">6. Governance</h5>
-										<p class="small m-0">Defined the framework for clarifying roles, responsibilities, and authority over decisions.</p>
-									</div>
-								</div>										
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<section class="py-6">				
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-lg-6 order-1 order-lg-2 offset-lg-1">
-							<div class="content__title mb-5">
-								<span class="h6 ls3 t600 uppercase brand-primary">2. Research</span><br />								
-								<h3 class="display-4 t100-desktop">UI Audit</h3>
-							</div>
-							<p>Our goal was to define a working set of foundational design principles and styles. These styles would become our Design Tokens which would inform and translate to any UI component the team might design. The benefit of abstracting and tokenizing these design decisions allowed us to develop a system that would be platform-agnostic and be a single source of truth to maintain the Quorum product line.</p>
-						</div>
-						<div class="col-12 col-md-10 col-lg-5 order-2 order-lg-1 offset-md-1 offset-lg-0">
-							<div class="row mx-1">
-								<div class="col-6 col-md-4">
-									<span class="shadow rounded text-center d-block mb-4">									
-										<img src="/resources/images/projects/quorum/design-system/circle-color.png" />
-										<br />
-										<span class="h6 t600 uppercase">Colors</span>
-									</span>
-								</div>
-								<div class="col-6 col-md-4">
-									<span class="shadow rounded text-center d-block mb-4">									
-										<img src="/resources/images/projects/quorum/design-system/circle-typography.png" />
-										<br />
-										<span class="h6 t600 uppercase">Typography</span>
-									</span>
-								</div>
-								<div class="col-6 col-md-4">
-									<span class="shadow rounded text-center d-block mb-4">									
-										<img src="/resources/images/projects/quorum/design-system/circle-space.png" />
-										<br />
-										<span class="h6 t600 uppercase">Space</span>
-									</span>
-								</div>
-								<div class="col-6 col-md-4">
-									<span class="shadow rounded text-center d-block mb-4">									
-										<img src="/resources/images/projects/quorum/design-system/circle-radius.png" />
-										<br />
-										<span class="h6 t600 uppercase">Radius</span>
-									</span>
-								</div>
-								<div class="col-6 col-md-4">
-									<span class="shadow rounded text-center d-block mb-4">									
-										<img src="/resources/images/projects/quorum/design-system/circle-data-viz.png" />
-										<br />
-										<span class="h6 t600 uppercase">Data Viz</span>
-									</span>
-								</div>
-								<div class="col-6 col-md-4">
-									<span class="shadow rounded text-center d-block mb-4">									
-										<img src="/resources/images/projects/quorum/design-system/circle-elevation.png" />
-										<br />
-										<span class="h6 t600 uppercase">Elevation</span>
-									</span>
-								</div>
-							</div>
-
-							<!--
-							<div class="position-relative py-5">
-								<ul class="floating-circles d-none">
-									<li data-parallax='{"x": 50, "smoothness": 20}'></li>
-									<li data-parallax='{"y": 40, "smoothness": 30}'></li>
-									<li data-parallax='{"y": -25, "smoothness": 20}'></li>
-									<li data-parallax='{"x": -20, "smoothness": 20}'></li>
- 									<li data-parallax='{"y": -30, "smosothness": 20}'></li>
-									<li data-parallax='{"x": 40, "smoothness": 10}'></li>
-									<li data-parallax='{"y": -45, "smoothness": 20}'></li>
-									<li data-parallax='{"y": 60, "smoothness": 30}'></li>									
-								</ul>
-							<img src="https://images.squarespace-cdn.com/content/v1/55427981e4b09befa5d50eff/1580394178882-PEDONKXVY04WRQQYM6NK/foundation-elements-8UP.jpg?format=2500w" class="d-none"/>
-							-->
-						</div>
-					</div>
-				</div>
-			</section>
-
-
-			<section id="section-understand" class="py-6">				
+			<section class="bg-primary dark py-6">				
 				<div class="container">
 					<div class="row">
-						<div class="col-12">				
+						<div class="col-12 col-lg-6">
+							<span class="h6 ls3 t600 uppercase">1. Understand</span><br />								
+							<h2 class="display-4 t100-desktop">Getting Everyone on the Same Page</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-6">
+							<p class="lead">This is where we talk with the team, find out what's holding them back, and define exactly what success should look like.</p>
+							<div class="mt-3">
+								<p>I conducted a series of in-depth interviews with Blackberg Group's internal teams, focusing on the individuals responsible for day-to-day business development operations. These discussions revealed recurring user frustrations around speed, consistency, and responsiveness in the existing Power BI-coded pipeline. Understanding these friction points early on shaped the project's direction, ensuring that the new design system would address core inefficiencies head-on.</p>
+								<p>During these sessions, I also gathered user requirements and defined tangible success metrics—such as reducing the time required to input new leads and gauging overall user satisfaction with the updated interface. By incorporating direct feedback from the people who use the system, we could prioritize improvements that delivered the greatest impact.</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-5 offset-lg-1">
+							<h3>Project Goals & Constraints</h3>
+							<div class="row">
+								<div class="col-12 mb-5 mb-lg-4">
+									<div class="feature-box">
+										<div class="fbox-icon bg-secondary rounded-circle">
+											<div class="svg-wrapper d-flex h-100 align-items-center justify-content-center text-dark">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
+												<path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z"/>
+												</svg>
+											</div>
+										</div>
+										<div class="fbox-content">
+											<h3>Branding</h3>
+											<p>Maintain brand guidelines and integrate with Power BI environment.</p>
+										</div>
+									</div>
+								</div>								
+								<div class="col-12">
+									<div class="feature-box">
+										<div class="fbox-icon bg-secondary rounded-circle">
+											<div class="svg-wrapper d-flex h-100 align-items-center justify-content-center text-dark">
+												<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-arrows-angle-expand" viewBox="0 0 16 16">
+												<path fill-rule="evenodd" d="M5.828 10.172a.5.5 0 0 0-.707 0l-4.096 4.096V11.5a.5.5 0 0 0-1 0v3.975a.5.5 0 0 0 .5.5H4.5a.5.5 0 0 0 0-1H1.732l4.096-4.096a.5.5 0 0 0 0-.707m4.344-4.344a.5.5 0 0 0 .707 0l4.096-4.096V4.5a.5.5 0 1 0 1 0V.525a.5.5 0 0 0-.5-.5H11.5a.5.5 0 0 0 0 1h2.768l-4.096 4.096a.5.5 0 0 0 0 .707"/>
+												</svg>
+											</div>
+										</div>
+										<div class="fbox-content">
+											<h3>At Scale</h3>
+											<p>Establish a scalable design system architecture that can be applied to multiple internatl projects.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="py-6 bg-light">				
+				<div class="container">
+					<div class="row align-items-stretch">
+						<div class="col-12 col-lg-8 offset-lg-2 text-center">
+							<div class="content__title mb-5">
+								<span class="h6 ls3 t600 uppercase brand-primary">2. Research</span><br />								
+								<h2 class="display-4 t100-desktop">Digging Deeper into Tools and Workflows</h2>
+							</div>
+							<p>By exploring industry best practices, validating our chosen technology stack, and mapping user journeys, we uncovered key insights that shaped our approach to a streamlined, data-driven design system.</p>
+						</div>
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card shadow">
+								<img src="/resources/images/projects/blackberg-group/design-system/research-competitive-analysis.png" class="card-img-top" />
+								<div class="card-body small">
+								<h3 class="mb-0">Competitive Analysis</h3>
+								I evaluated several B2B lead management tools to uncover best-in-class design practices—focusing on leading CRM solutions and their UX patterns for data entry. This exploration helped me identify common elements, such as intuitive form flows and clear data structures, that could inform the new design system.
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card shadow">
+								<img src="/resources/images/projects/blackberg-group/design-system/research-tech-stack.png" class="card-img-top" />
+								<div class="card-body small">
+									<h3 class="mb-0">Tech Stack</h3>
+									<strong>Bootstrap 5</strong> provided a robust, responsive grid system and a rich library of reusable components.
+									<br />
+									<br />
+									<strong>Next.js</strong> offered server-side rendering capabilities, ensuring faster load times and a scalable foundation for future growth.
+									<br />
+									<br />
+									<strong>Storybook.js</strong> served as a centralized platform for developing, testing, and documenting UI components in isolation, guaranteeing consistency across the entire pipeline.<br />
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-4 d-flex">
+							<div class="card shadow">
+								<img src="/resources/images/projects/blackberg-group/design-system/research-userflows.png" class="card-img-top" />
+								<div class="card-body small">
+									<h3 class="mb-0">User Flows</h3>
+									I mapped out the entire user journey—from adding a new lead to generating insights—to identify repetitive tasks and opportunities for reusable design system components. These findings shaped the core UI structure, ensuring data entry and analysis were supported by consistent patterns, intuitive interactions, and a smooth overall experience.									
+								</div>
+							</div>
+						</div>												
+					</div>
+				</div>
+			</section>
+
+
+			<section id="section-design" class="py-6">				
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<img src="/resources/images/projects/blackberg-group/design-system/design-figma-ui.png" class="shadow-lg" />
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-8 offset-lg-2 text-center">
 							<div class="content__title text-center mb-5">
 								<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />								
-								<h3 class="display-4 t100-desktop">Architecture</h3>
+								<h3 class="display-4 t100-desktop">Design System Foundations</h3>
 							</div>
-							<p>We looked at Quorum's Design System (DS) from an aerial perspective and accounted for the different pieces, processes, and teams that would need to be in place to gain traction and scale within the organization. Our goal was to lay the foundation for a platform-agnostic DS that would scale for any team regardless of the front-end framework. The Quorum DS comprises four core pillars: Design Kit, Dev Kit, Documentation, and Governance.</p>
+							<p>In building a cohesive and scalable design system, I focused on establishing a centralized Figma kit, leveraging global variables for quick updates, and creating reusable components that work across multiple screen sizes and states. These elements combined to provide a consistent user experience while accelerating the design-to-development process.</p>
 						</div>
 					</div>
 				</div>
