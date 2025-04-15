@@ -269,8 +269,8 @@
 							</div>
 							<p>By exploring industry best practices, validating our chosen technology stack, and mapping user journeys, we uncovered key insights that shaped our approach to a streamlined, data-driven design system.</p>
 						</div>
-						<div class="col-12 col-lg-4 d-flex">
-							<div class="card shadow">
+						<div class="col-12 col-md-4 d-flex">
+							<div class="card shadow mb-3 mb-md-0">
 								<img src="/resources/images/projects/blackberg-group/design-system/research-competitive-analysis.png" class="card-img-top" />
 								<div class="card-body small">
 								<h3 class="mb-0">Competitive Analysis</h3>
@@ -278,8 +278,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4 d-flex">
-							<div class="card shadow">
+						<div class="col-12 col-md-4 d-flex">
+							<div class="card shadow mb-3 mb-md-0">
 								<img src="/resources/images/projects/blackberg-group/design-system/research-tech-stack.png" class="card-img-top" />
 								<div class="card-body small">
 									<h3 class="mb-0">Tech Stack</h3>
@@ -293,8 +293,8 @@
 								</div>
 							</div>
 						</div>
-						<div class="col-12 col-lg-4 d-flex">
-							<div class="card shadow">
+						<div class="col-12 col-md-4 d-flex">
+							<div class="card shadow mb-3 mb-md-0">
 								<img src="/resources/images/projects/blackberg-group/design-system/research-userflows.png" class="card-img-top" />
 								<div class="card-body small">
 									<h3 class="mb-0">User Flows</h3>
@@ -318,7 +318,7 @@
 						<div class="col-12 col-lg-8 offset-lg-2 text-center">
 							<div class="content__title text-center mb-5">
 								<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />								
-								<h3 class="display-4 t100-desktop">Design System Foundations</h3>
+								<h2 class="display-4 t100-desktop">Design System Foundations</h2>
 							</div>
 							<p>In building a cohesive and scalable design system, I focused on establishing a centralized Figma kit, leveraging global variables for quick updates, and creating reusable components that work across multiple screen sizes and states. These elements combined to provide a consistent user experience while accelerating the design-to-development process.</p>
 						</div>
@@ -327,20 +327,34 @@
 			</section>			
 
 
-			<section id="section-research-design-kit" class="py-6 design-kit-section">
+			<section id="section-research-design-kit">
 				<div class="container">
-					<div class="row align-items-center">
+					<div class="row align-items-center py-4">
 						<div class="col-12 col-md-12 col-lg-5">
-							<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />
-							<h4 class="h1">Design Kit</h4>															
-							<p>The Quorum Design Kit is a shared Figma UI library distributed to designers. It provides a consistent visual language using UI components and styles for rapid prototyping and mock-ups. We took advantage of Figma's built-in branching and version control, allowing multiple designers to work from the same file. This workflow laid the foundation for how the Design Kit would scale over time and helped create a shared language among designers and developers utilizing the same version control principles. The development of a Design Kit served as a substantial cultural tool as it promoted collaboration between design and development throughout the entirety of the project.</p>
+							<h4 class="h1">Centralized Design Kit</h4>															
+							<p>I began by creating a Figma “single source of truth” that housed all core UI elements, typography styles, and color palettes. This kit served as the foundation for rapid prototyping, ensuring every member of the team worked from the same, up-to-date resource.</p>
 						</div>
 						<div class="col-12 col-md-8 col-lg-6 offset-0 offset-md-2 offset-lg-1">
 							<div class="shadow" style="margin-bottom: 30%; background: url('/resources/images/projects/quorum/design-system/figma-border.png') no-repeat top left; background-size: cover;">
 								<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" class="box-shadow-light img-fluid" style="bottom: -15%; margin-bottom: -15%;" data-parallax='{"y": 25, "smoothness": 20}' />	
 							</div>			
 						</div>						
+					</div>
+					<div class="row align-items-center py-4">
+						<div class="col-12 col-md-12 col-lg-5 offset-0 offset-md- offset-lg-1 order-0 order-lg-1">
+							<h4 class="h1">Centralized Design Kit</h4>															
+							<p>I began by creating a Figma “single source of truth” that housed all core UI elements, typography styles, and color palettes. This kit served as the foundation for rapid prototyping, ensuring every member of the team worked from the same, up-to-date resource.</p>
+						</div>
+						<div class="col-12 col-md-8 col-lg-6  order-1 order-lg-0 offset-0 offset-md-2 offset-lg-0">
+							<div class="shadow" style="margin-bottom: 30%; background: url('/resources/images/projects/quorum/design-system/figma-border.png') no-repeat top left; background-size: cover;">
+								<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" class="box-shadow-light img-fluid" style="bottom: -15%; margin-bottom: -15%;" data-parallax='{"y": 25, "smoothness": 20}' />	
+							</div>			
+						</div>						
 					</div>	
+					
+					
+
+
 					<div id="wireframe-carousel" class="row no-gutters mt-6">
 
 							<div class="swiper-container wireframe-title font-primary t600 uppercase h6 ">
@@ -416,30 +430,6 @@
 
 					</div>				
 				</div>		
-				<div class="design-kit-section__svg d-none d-lg-inline">
-					<svg xmlns="http://www.w3.org/2000/svg" width="610" height="704" fill="none">
-					  <path stroke="#D0D9EE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M304.258 432.594v-79.145M582.256 655.191h-55.401c-105.936 0-194.587-74.001-217.081-173.131"/>
-					  <path stroke="#AA8B41" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M405.172 591.756c-47.817-36.613-78.654-94.286-78.654-159.162v-47.487M606 632.931h-79.145c-25.15 0-49.216-4.634-71.394-13.094"/>
-					  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M354.806 478.71c-3.932-14.708-6.029-30.167-6.029-46.116V313.876M606 610.671h-79.146c-71.934 0-133.906-42.652-162.007-104.046"/>
-					  <path stroke="#D0D9EE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M259.739 408.851v-31.659M590.171 588.412h-63.317c-86.055 0-155.817-69.762-155.817-155.818v-55.402"/>
-					  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M393.296 432.594v-79.145"/>
-					  <path stroke="#AA8B41" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M606 566.152h-23.744"/>
-					  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M606 543.893h-79.146c-61.468 0-111.298-49.83-111.298-111.299v-47.487"/>
-					  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M340.778 591.755c-36.645-42.801-58.779-98.396-58.779-159.161v-31.658M606 677.45h-79.146c-62.118 0-118.834-23.131-162.004-61.252M281.998 337.62v63.316"/>
-					  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M277.725 529.154c-11.614-29.947-17.986-62.509-17.986-96.559v-4.33M534.769 699.71h-7.915c-89.37 0-168.49-43.89-216.98-111.292"/>
-					  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M566.427 699.71H606M393.296 432.594c0 73.762 59.796 133.558 133.558 133.558h23.744"/>
-					  <path stroke="#D0D9EE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M35.658 48.52H148.44c122.937 0 222.597 99.659 222.597 222.596v82.261"/>
-					  <path stroke="#AA8B41" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M75.231 70.779h73.209c110.643 0 200.337 89.694 200.337 200.336v11.031"/>
-					  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M321.274 228.048c3.426 13.791 5.244 28.217 5.244 43.068v82.261"/>
-					  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M11.915 93.038H148.44c74.474 0 138.269 45.716 164.855 110.615"/>
-					  <path stroke="#D0D9EE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M304.258 301.549v51.828M19.83 115.298H148.44c84.338 0 153.026 67.005 155.735 150.683"/>
-					  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M4 137.558h144.44c73.762 0 133.558 59.796 133.558 133.558v42.688"/>
-					  <path stroke="#AA8B41" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M240.73 208.888c12.001 17.763 19.009 39.177 19.009 62.228v82.261"/>
-					  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M51.487 159.817h96.953c28.814 0 55.07 10.949 74.835 28.914"/>
-					  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M377.792 185.181c10.023 26.739 15.504 55.696 15.504 85.935v82.261M4 26.26h144.44c91.868 0 171.92 50.593 213.812 125.437"/>
-					  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M19.83 4H148.44c147.524 0 267.115 119.592 267.115 267.116v30.434"/>
-					</svg>
-				</div>
 			</section>			
 
 
