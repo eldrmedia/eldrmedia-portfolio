@@ -342,8 +342,8 @@
 					</div>
 					<div class="row align-items-center py-4">
 						<div class="col-12 col-md-12 col-lg-5 offset-0 offset-md- offset-lg-1 order-0 order-lg-1">
-							<h4 class="h1">Centralized Design Kit</h4>															
-							<p>I began by creating a Figma “single source of truth” that housed all core UI elements, typography styles, and color palettes. This kit served as the foundation for rapid prototyping, ensuring every member of the team worked from the same, up-to-date resource.</p>
+							<h4 class="h1">Figma Variables</h4>															
+							<p>To maintain consistency and simplify global updates, I incorporated Figma Variables for colors and text styles. With a single change, I could update the entire system—saving hours of manual editing and preventing discrepancies across multiple screens or components.</p>
 						</div>
 						<div class="col-12 col-md-8 col-lg-6  order-1 order-lg-0 offset-0 offset-md-2 offset-lg-0">
 							<div class="shadow" style="margin-bottom: 30%; background: url('/resources/images/projects/quorum/design-system/figma-border.png') no-repeat top left; background-size: cover;">
@@ -351,7 +351,17 @@
 							</div>			
 						</div>						
 					</div>	
-					
+					<div class="row align-items-center py-4">
+						<div class="col-12 col-md-12 col-lg-5">
+							<h4 class="h1">Reusable Components</h4>															
+							<p>Each interface element (like buttons, tables, and form fields) was constructed using Auto Layout and component variants. This allowed for quick customization—hover states, disabled views, and responsive layouts—while preserving design consistency and scalability.</p>
+						</div>
+						<div class="col-12 col-md-8 col-lg-6 offset-0 offset-md-2 offset-lg-1">
+							<div class="shadow" style="margin-bottom: 30%; background: url('/resources/images/projects/quorum/design-system/figma-border.png') no-repeat top left; background-size: cover;">
+								<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" class="box-shadow-light img-fluid" style="bottom: -15%; margin-bottom: -15%;" data-parallax='{"y": 25, "smoothness": 20}' />	
+							</div>			
+						</div>						
+					</div>					
 					
 
 
