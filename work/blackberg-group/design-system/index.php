@@ -1,4 +1,5 @@
 <?php include("../../../includes_eldrmedia/_eldrmedia_config.php");?>
+<?php include("../../../includes_eldrmedia/functions.php");?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
@@ -441,7 +442,26 @@
 					</div>				
 				</div>		
 			</section>			
-
+			<?php
+$crumbs = getBreadcrumbs($BASE_URL);
+?>
+<nav aria-label="breadcrumb" class="d-block position-relative">
+  <ol class="breadcrumb">
+    <?php foreach ($crumbs as $idx => $crumb): ?>
+      <?php if ($idx < count($crumbs) - 1): // not last ?>
+        <li class="breadcrumb-item">
+          <a href="<?= htmlspecialchars($crumb['url']) ?>">
+            <?= htmlspecialchars($crumb['label']) ?>
+          </a>
+        </li>
+      <?php else: // last segment, active ?>
+        <li class="breadcrumb-item active" aria-current="page">
+          <?= htmlspecialchars($crumb['label']) ?>
+        </li>
+      <?php endif; ?>
+    <?php endforeach; ?>
+  </ol>
+</nav>
 
 			<section>				
 				<div class="container pb-6">
@@ -513,8 +533,10 @@
 				</div>
 			</section>
 
+			<?php $crumbs = getBreadcrumbs($BASE_URL); ?>
 
-			<section id="section-research-ideas" class="py-6">
+
+			<section id="section-research-ideas" class="py-6 d-none">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-12">
@@ -530,7 +552,7 @@
 			</section>	
 
 
-			<section id="section-research-design-kit" class="py-6">
+			<section id="section-research-design-kit" class="py-6 d-none">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-12 col-md-12 col-lg-5">
@@ -546,7 +568,7 @@
 			</section>			
 			
 			
-			<section id="section-research-design-kit" class="py-6">
+			<section id="section-research-design-kit" class="py-6 d-none">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-12">
@@ -562,7 +584,7 @@
 			</section>		
 
 
-			<section id="section-practice" class="py-6 practice-section">
+			<section id="section-practice" class="py-6 practice-section d-none">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-12 col-md-12 col-lg-5 order-0 order-lg-1 offset-lg-1">
@@ -588,10 +610,11 @@
 						</div>						
 					</div>					
 				</div>		
-			</section>	
+			</section>
 
 
-			<section id="section-final-thoughts" class="bg-dark dark py-6">
+
+			<section id="section-final-thoughts" class="bg-dark dark py-6 d-none">
 				
 				<div class="container">
 					
