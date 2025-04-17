@@ -1,5 +1,7 @@
 <?php include("../../../includes_eldrmedia/_eldrmedia_config.php");?>
 <?php include("../../../includes_eldrmedia/functions.php");?>
+<?php $crumbs = getBreadcrumbs($BASE_URL); ?>
+<?php $nav = getPrevNext($CURRENT_PAGE, $BASE_URL); ?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
@@ -31,6 +33,10 @@
 					<svg viewBox="0 0 1440 114" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
 						<path d="M889.2 110.23C349.2 111.43 0 21.57 0 0v198h1440V0c0 21.93-16.32 113.83-550.8 110.23Z" fill="#fff"/>
 					</svg>
+				</div>
+
+				<div class="container">
+					
 				</div>
 
 				<div class="hero__content py-md-6 pt-lg-6 pb-lg-4">
@@ -84,7 +90,25 @@
 		<!-- Content
 		============================================= -->
 		<section id="content">
-
+			<nav aria-label="breadcrumb">
+				<div class="container">
+					<ol class="breadcrumb">
+						<?php foreach ($crumbs as $idx => $crumb): ?>
+						<?php if ($idx < count($crumbs) - 1): // not last ?>
+							<li class="breadcrumb-item">
+							<a href="<?= htmlspecialchars($crumb['url']) ?>">
+								<?= htmlspecialchars($crumb['label']) ?>
+							</a>
+							</li>
+						<?php else: // last segment, active ?>
+							<li class="breadcrumb-item active" aria-current="page">
+							<?= htmlspecialchars($crumb['label']) ?>
+							</li>
+						<?php endif; ?>
+						<?php endforeach; ?>
+					</ol>
+				</div>
+			</nav>
 			<section id="section-project-details" class="section nobg m-0">
 
 				<div class="project-details__content">
@@ -362,274 +386,40 @@
 								<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" class="box-shadow-light img-fluid" style="bottom: -15%; margin-bottom: -15%;" data-parallax='{"y": 25, "smoothness": 20}' />	
 							</div>			
 						</div>						
-					</div>					
-					
-
-
-					<div id="wireframe-carousel" class="row no-gutters mt-6">
-
-							<div class="swiper-container wireframe-title font-primary t600 uppercase h6 ">
-								<div class="swiper-wrapper">
-									<div class="titles__slide swiper-slide">Colors</div>
-									<div class="titles__slide swiper-slide">Typography</div>
-									<div class="titles__slide swiper-slide">Buttons</div>
-									<div class="titles__slide swiper-slide">Inputs</div>
-									<div class="titles__slide swiper-slide">Dropdowns</div>
-									<div class="titles__slide swiper-slide">Icons</div>
-									<div class="titles__slide swiper-slide">Data Viz</div>
-								</div>
-							</div>
-							
-							<div class="swiper-container wireframe-content">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img src="/resources/images/projects/quorum/design-system/carousel-colors.jpg" class="rounded" />
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img data-src="/resources/images/projects/quorum/design-system/carousel-typography.jpg" class="rounded swiper-lazy" />
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img data-src="/resources/images/projects/quorum/design-system/carousel-buttons.jpg" class="rounded swiper-lazy" />
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img data-src="/resources/images/projects/quorum/design-system/carousel-inputs.jpg" class="rounded swiper-lazy" />
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img data-src="/resources/images/projects/quorum/design-system/carousel-dropdowns.jpg" class="rounded swiper-lazy" />
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img data-src="/resources/images/projects/quorum/design-system/carousel-iconography.jpg" class="rounded swiper-lazy" />
-											</div>
-										</div>
-									</div>
-									<div class="swiper-slide">
-										<div class="row align-items-center">
-											<div class="col-12 col-md-10 offset-md-1">
-												<img data-src="/resources/images/projects/quorum/design-system/carousel-data-viz.jpg" class="rounded swiper-lazy" />
-											</div>
-										</div>
-									</div>																							
-								</div>
-								<!-- Add Arrows -->
-
-								<div class="swiper-button-next swiper-button-white swiper-button-shape"></div>
-								<div class="swiper-button-prev swiper-button-white swiper-button-shape"></div>
-
-							</div>
-
-					</div>				
-				</div>		
-			</section>			
-			<?php
-$crumbs = getBreadcrumbs($BASE_URL);
-?>
-<nav aria-label="breadcrumb" class="d-block position-relative">
-  <ol class="breadcrumb">
-    <?php foreach ($crumbs as $idx => $crumb): ?>
-      <?php if ($idx < count($crumbs) - 1): // not last ?>
-        <li class="breadcrumb-item">
-          <a href="<?= htmlspecialchars($crumb['url']) ?>">
-            <?= htmlspecialchars($crumb['label']) ?>
-          </a>
-        </li>
-      <?php else: // last segment, active ?>
-        <li class="breadcrumb-item active" aria-current="page">
-          <?= htmlspecialchars($crumb['label']) ?>
-        </li>
-      <?php endif; ?>
-    <?php endforeach; ?>
-  </ol>
-</nav>
-
-			<section>				
-				<div class="container pb-6">
-					<div class="content__title text-center mb-5">
-						<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />
-						<h4 class="h1">Design Kit Governance Workflow</h3>							
 					</div>
-					<div class="row">
-						<div class="col-12 col-sm-6 col-lg-3">
-							<div id="card1" class="card card-governance border-0 shadow-lg mb-6 mb-md-0">
-								<div class="d-flex justify-content-start align-items-center px-3 pt-5">
-									<svg width="32" height="32" class="mr-2 brand-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M14 95.7924C14 42.8877 56.8878 0 109.793 0H274.161C327.066 0 369.954 42.8877 369.954 95.7924C369.954 129.292 352.758 158.776 326.711 175.897C352.758 193.019 369.954 222.502 369.954 256.002C369.954 308.907 327.066 351.795 274.161 351.795H272.081C247.279 351.795 224.678 342.369 207.666 326.904V415.167C207.666 468.777 163.657 512 110.309 512C57.5361 512 14 469.243 14 416.207C14 382.709 31.1945 353.227 57.2392 336.105C31.1945 318.983 14 289.5 14 256.002C14 222.502 31.196 193.019 57.2425 175.897C31.196 158.776 14 129.292 14 95.7924ZM176.288 191.587H109.793C74.2172 191.587 45.3778 220.427 45.3778 256.002C45.3778 291.44 73.9948 320.194 109.381 320.416C109.518 320.415 109.655 320.415 109.793 320.415H176.288V191.587ZM207.666 256.002C207.666 291.577 236.505 320.417 272.081 320.417H274.161C309.737 320.417 338.576 291.577 338.576 256.002C338.576 220.427 309.737 191.587 274.161 191.587H272.081C236.505 191.587 207.666 220.427 207.666 256.002ZM109.793 351.795C109.655 351.795 109.518 351.794 109.381 351.794C73.9948 352.015 45.3778 380.769 45.3778 416.207C45.3778 451.652 74.6025 480.622 110.309 480.622C146.591 480.622 176.288 451.186 176.288 415.167V351.795H109.793ZM109.793 31.3778C74.2172 31.3778 45.3778 60.2173 45.3778 95.7924C45.3778 131.368 74.2172 160.207 109.793 160.207H176.288V31.3778H109.793ZM207.666 160.207H274.161C309.737 160.207 338.576 131.368 338.576 95.7924C338.576 60.2173 309.737 31.3778 274.161 31.3778H207.666V160.207Z"/></svg>
-									<h4 class="m-0 brand-primary">Figma</h4>
-								</div>
-								<div class="card-body">
-									<ul class="list pl-2 m-0">
-										<li>Used by Design Team</li>
-										<li>Version control</li>
-										<li>Team collaboration</li>
-										<li>New design work happens here</li>
-									</ul>								
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<div id="card2" class="card card-governance border-0 shadow-lg mb-6 mb-md-0 mt-0 mt-sm-7">
-								<div class="d-flex justify-content-start align-items-center px-3 pt-5">
-									<svg width="32" height="32" class="mr-2 brand-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
-									<h4 class="m-0 brand-primary">GitHub</h4>
-								</div>
-								<div class="card-body">
-									<ul class="list pl-2 m-0">
-										<li>Current and past releases</li>
-										<li>Notified of new builds/releases</li>
-									</ul>								
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<div id="card3" class="card card-governance border-0 shadow-lg mb-6 mb-md-0">
-								<div class="d-flex justify-content-start align-items-center px-3 pt-5">
-								<svg width="32" height="32" class="mr-2 brand-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M490 241.7C417.1 169 320.6 71.8 248.5 0 83 164.9 6 241.7 6 241.7c-7.9 7.9-7.9 20.7 0 28.7C138.8 402.7 67.8 331.9 248.5 512c379.4-378 15.7-16.7 241.5-241.7 8-7.9 8-20.7 0-28.6zm-241.5 90l-76-75.7 76-75.7 76 75.7-76 75.7z"/></svg>
-									<h4 class="m-0 brand-primary">JIRA</h4>
-								</div>
-								<div class="card-body">
-									<ul class="list pl-2 m-0">
-										<li>Jira issues to track bugs, feature requests, new components, etc.</li>
-										<li>Backlog management</li>
-										<li>Promotes transparency</li>
-									</ul>								
-								</div>
-							</div>
-						</div>
-						<div class="col-12 col-sm-6 col-lg-3">
-							<div id="card4" class="card card-governance border-0 shadow-lg mt-0 mt-md-7">
-								<div class="d-flex justify-content-start align-items-center px-3 pt-5">
-								<svg width="32" height="32" class="mr-2 brand-primary" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M14 95.7924C14 42.8877 56.8878 0 109.793 0H274.161C327.066 0 369.954 42.8877 369.954 95.7924C369.954 129.292 352.758 158.776 326.711 175.897C352.758 193.019 369.954 222.502 369.954 256.002C369.954 308.907 327.066 351.795 274.161 351.795H272.081C247.279 351.795 224.678 342.369 207.666 326.904V415.167C207.666 468.777 163.657 512 110.309 512C57.5361 512 14 469.243 14 416.207C14 382.709 31.1945 353.227 57.2392 336.105C31.1945 318.983 14 289.5 14 256.002C14 222.502 31.196 193.019 57.2425 175.897C31.196 158.776 14 129.292 14 95.7924ZM176.288 191.587H109.793C74.2172 191.587 45.3778 220.427 45.3778 256.002C45.3778 291.44 73.9948 320.194 109.381 320.416C109.518 320.415 109.655 320.415 109.793 320.415H176.288V191.587ZM207.666 256.002C207.666 291.577 236.505 320.417 272.081 320.417H274.161C309.737 320.417 338.576 291.577 338.576 256.002C338.576 220.427 309.737 191.587 274.161 191.587H272.081C236.505 191.587 207.666 220.427 207.666 256.002ZM109.793 351.795C109.655 351.795 109.518 351.794 109.381 351.794C73.9948 352.015 45.3778 380.769 45.3778 416.207C45.3778 451.652 74.6025 480.622 110.309 480.622C146.591 480.622 176.288 451.186 176.288 415.167V351.795H109.793ZM109.793 31.3778C74.2172 31.3778 45.3778 60.2173 45.3778 95.7924C45.3778 131.368 74.2172 160.207 109.793 160.207H176.288V31.3778H109.793ZM207.666 160.207H274.161C309.737 160.207 338.576 131.368 338.576 95.7924C338.576 60.2173 309.737 31.3778 274.161 31.3778H207.666V160.207Z"/></svg>
-									<h4 class="m-0 brand-primary">Figma</h4>
-								</div>
-								<div class="card-body">
-									<ul class="list pl-2 m-0">
-										<li>Using JIRA issues to manage backlog</li>
-										<li>Backlog tasks are done in branches made from <code class="brand-secondary">main</code></li>
-									</ul>								
-								</div>
-							</div>
-						</div>		
-					</div>
-				</div>
-			</section>
-
-			<?php $crumbs = getBreadcrumbs($BASE_URL); ?>
-
-
-			<section id="section-research-ideas" class="py-6 d-none">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12">
-						<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />
-							<h4 class="h1">Developer Kit</h4>	
-							<p>The Quorum Developer Kit is a shared repo that contains fonts, color swatches, and iconography. All CSS styles are component-specific but use variables auto-generated from our Design Token YAML file using Theo, allowing us to manage all of our Design Token properties in one place.</p>		
-						</div>
-						<div class="col-12">
-							<img src="/resources/images/projects/quorum/design-system/developer-kit-token-workflow.jpg" class="img-fluid rounded" />	
-						</div>
-					</div>
-				</div>				
-			</section>	
-
-
-			<section id="section-research-design-kit" class="py-6 d-none">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-12 col-lg-5">
-							<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />
-							<h4 class="h1">Documentation</h4>															
-							<p>The DS Documentation website is the storefront for the DS where everything comes together. It is the living, single source of truth for design guidelines, best practices, component blueprints, code snippets, contribution workflows, resources, and much more. The site was built using Storybook.js, and workflows were established to make it easy for anyone on the team to utilize the documentation. Our documentation was thorough covering the design continuum, from design principles to interactive examples and anatomy breakdowns of each component.</p>
-						</div>
-						<div class="col-12 col-md-10 col-lg-7 offset-0 offset-md-1 offset-lg-0">
-							<img src="/resources/images/projects/quorum/design-system/design-documentation.png" class="img-fluid rounded" />	
-						</div>						
-					</div>					
-				</div>		
-			</section>			
-			
-			
-			<section id="section-research-design-kit" class="py-6 d-none">
-				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12">
-							<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />
-							<h4 class="h1">Governance</h4>															
-							<p>The governance, workflows, and structures built around Quorum DS are essential to ensure its success. It was vital for us to have a dedicated centralized team that would own the DS and create workflows and processes to how team members would utilize and contribute to it. The graphics below illustrate some of the workflows and processes we established to keep things moving smoothly behind the scenes.</p>
-						</div>
-						<div class="col-12 text-center">
-							<img src="/resources/images/projects/quorum/design-system/governance-flowchart.jpg" class="img-fluid" />	
-						</div>						
-					</div>					
 				</div>		
 			</section>		
 
 
-			<section id="section-practice" class="py-6 practice-section d-none">
+			<section id="section-design" class="py-6">				
 				<div class="container">
-					<div class="row align-items-center">
-						<div class="col-12 col-md-12 col-lg-5 order-0 order-lg-1 offset-lg-1">
-							<span class="h6 ls3 t600 uppercase brand-primary">4. Implementation</span><br />
-							<h4 class="h1">Practice Makes Perfect</h4>															
-							<p>Once our team, tools, and processes were established and documented in place, it was time to start designing and documenting Quorum's core UI component library. In conjunction with the app architecture team, the design team worked in design/dev pairs and planned sprints over three to four months. We designed, coded, and documented each core component one by one. During this process, we could kick the tires on the system and workflows we had established and iterate accordingly.</p>
+					<div class="row">
+						<div class="col-12">
+							<img src="/resources/images/projects/blackberg-group/design-system/design-figma-ui.png" class="shadow-lg" />
 						</div>
-						<div class="col-12 col-md-8 col-lg-6 practice-col">
-							<img src="/resources/images/projects/quorum/design-system/practice.png" class="img-fluid" />
-							<div class="practice-svg">
-								<svg xmlns="http://www.w3.org/2000/svg" width="676" height="676" fill="none">
-								  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M169.689 144.162c20.693-17.989 44.291-32.723 69.994-43.408M221.501 567.505C138.193 524.95 81.154 438.303 81.154 338.334c0-52.2 15.55-100.767 42.274-141.321M302.181 83.675a259.478 259.478 0 0 1 36.153-2.52c142.035 0 257.179 115.143 257.179 257.178 0 142.037-115.144 257.179-257.179 257.179a258.515 258.515 0 0 1-48.454-4.556"/>
-								  <path stroke="#AA8B41" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M510.852 492.648c-42.382 47.349-103.971 77.146-172.518 77.146-127.834 0-231.462-103.627-231.462-231.461 0-127.833 103.628-231.461 231.462-231.461 127.832 0 231.461 103.628 231.461 231.461 0 31.453-6.274 61.442-17.639 88.781"/>
-								  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M228.596 164.267c31.76-20.064 69.392-31.676 109.737-31.676 102.537 0 187.553 75.008 203.176 173.146M148.898 257.919c12.415-29.212 31.393-54.965 55.079-75.408M373.45 541.092a207.02 207.02 0 0 1-35.116 2.984c-113.629 0-205.744-92.114-205.744-205.743 0-8.371.5-16.627 1.472-24.737M542.57 363.359c-7.931 65.407-46.552 121.351-101.035 153.001"/>
-								  <path stroke="#D0D9EE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M436.013 187.086c49.553 32.07 82.346 87.829 82.346 151.247 0 99.426-80.601 180.025-180.026 180.025-54.628 0-103.572-24.33-136.588-62.746M172.515 408.551c-9.149-21.576-14.208-45.306-14.208-70.218 0-99.425 80.6-180.025 180.026-180.025 18.642 0 36.622 2.833 53.534 8.093"/>
-								  <path stroke="#7758F5" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M492.641 338.333c0 85.222-69.087 154.308-154.308 154.308-85.222 0-154.308-69.086-154.308-154.308s69.086-154.308 154.308-154.308c85.221 0 154.308 69.086 154.308 154.308Z"/>
-								  <path stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M466.923 338.333c0 71.019-57.572 128.59-128.589 128.59-71.019 0-128.59-57.571-128.59-128.59 0-71.017 57.571-128.59 128.59-128.59 71.017 0 128.589 57.573 128.589 128.59Z"/>
-								  <path stroke="#D0D9EE" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M75.736 232.899C117.54 128.878 219.359 55.436 338.334 55.436c116.451 0 216.469 70.363 259.858 170.893M518.362 556.565c-48.913 40.397-111.637 64.665-180.029 64.665-156.24 0-282.897-126.656-282.897-282.897M621.231 338.333c0 74.46-28.767 142.199-75.792 192.714"/>
-								  <path stroke="#532EA4" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M316.731 646.205C156.365 635.117 29.718 501.516 29.718 338.334c0-158.049 118.806-288.35 271.985-306.465M602.4 178.521c28.271 46.614 44.549 101.312 44.549 159.813 0 131.304-82.001 243.456-197.586 288.04M384.208 33.104c73.536 10.959 138.601 47.86 185.588 101.094"/>
-								  <path stroke="#AA8B41" stroke-linecap="round" stroke-miterlimit="10" stroke-width="6.667" d="M28.393 463.933C12.663 425.156 4 382.756 4 338.333c0-84.187 31.117-161.108 82.476-219.886M526.147 614.968c-53.532 36.416-118.188 57.699-187.813 57.699-103.412 0-195.858-46.95-257.185-120.696M611.57 531.047a336.059 336.059 0 0 1-42.709 49.435M538.342 70.4c81.543 60.969 134.324 158.287 134.324 267.933 0 30.739-4.149 60.508-11.916 88.78M130.044 76.794C187.178 31.232 259.575 4 338.334 4c26.056 0 51.417 2.981 75.76 8.62"/>
-								</svg>
+					</div>
+					<div class="row">
+						<div class="col-12 col-lg-8 offset-lg-2 text-center">
+							<div class="content__title text-center mb-5">
+								<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />								
+								<h2 class="display-4 t100-desktop">Design System Foundations</h2>
 							</div>
-						</div>						
-					</div>					
-				</div>		
+							<p>In building a cohesive and scalable design system, I focused on establishing a centralized Figma kit, leveraging global variables for quick updates, and creating reusable components that work across multiple screen sizes and states. These elements combined to provide a consistent user experience while accelerating the design-to-development process.</p>
+						</div>
+					</div>
+				</div>
 			</section>
 
-
-
 			<section id="section-final-thoughts" class="bg-dark dark py-6 d-none">
-				
 				<div class="container">
-					
 					<div class="row">
-						
 						<div class="col-12 col-md-6 mx-auto">
 							<h3 class="display-4 t100-desktop text-center">My final thoughts...</h3>
 							<p>The impact of the Quorum DS is felt far and wide, as it is shared across multiple teams, so efficiencies are extended between team members and products. When one team has spent time and effort to solve a design problem, then why shouldn’t another team in your company also benefit from this work?</p>
 							<p>My team delivered 173 custom components, recipes, templates and variations, covering nearly 100% of the use cases within Quorum. New features were built 80% faster compared to the creation of new components from scratch, saving the company both time and money.</p>
 						</div>
-																								
 					</div>					
-					
 				</div>
-				
 			</section>
 
 	
@@ -641,26 +431,26 @@ $crumbs = getBreadcrumbs($BASE_URL);
 
 						<div class="col-md-8 mx-auto">
 
-							<div class="row">
+							<div class="row">					
 
 								<div class="col-4 col-sm-3">
-									<a href="/work/foundation/" class="text-white">
+									<a href="<?= htmlspecialchars($nav['prev']['url']) ?>" class="text-white">
 										<i class="icon-arrow1-left icon-1x d-block mb-3"></i>
-										<h5 class="h5 m-0 text-white m-0">Previous</h5>
+										<h5 class="h5 m-0 text-white small m-0"><?= htmlspecialchars($nav['prev']['label']) ?></h5>
 									</a>
 								</div>
 
 								<div class="col-4 col-sm-6">
 									<a href="/work/" class="text-white">
 										<i class="icon-star icon-1x d-block mb-3"></i>
-										<h5 class="h5 text-white m-0">View All</h5>
+										<h5 class="h5 text-white small m-0">View All</h5>
 									</a>
 								</div>
 
 								<div class="col-4 col-sm-3">
-									<a href="/work/chilld-bags/" class="text-white">
+									<a href="<?= htmlspecialchars($nav['next']['url']) ?>" class="text-white">
 										<i class="icon-arrow1-right icon-1x d-block mb-3"></i>
-										<h5 class="h5 m-0 text-white m-0">Next</h5>
+										<h5 class="h5 m-0 text-white small m-0"><?= htmlspecialchars($nav['next']['label']) ?></h5>
 									</a>
 								</div>
 
@@ -716,7 +506,6 @@ $(function(){
 	}
 });
 </script>
-
 
 
 	<?php include("../../../includes_eldrmedia/body-bottom-contents.php");?>

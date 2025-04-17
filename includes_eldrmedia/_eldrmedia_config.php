@@ -10,7 +10,7 @@
 			break;
 		case "/work/index.php":
 			$CURRENT_PAGE = "work";
-			$PAGE_TITLE = "ELDR MEDIA - Latest Work";
+			$PAGE_TITLE = "ELDR MEDIA - Work";
 			break;
 		case "/work/blackberg-group/index.php":
 			$CURRENT_PAGE = "blackberg-group"; 

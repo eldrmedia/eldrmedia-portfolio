@@ -32,3 +32,37 @@ function getBreadcrumbs(string $baseUrl = '/'): array {
 
     return $breadcrumbs;
 }
+
+/**
+ * Given the current page key, return ['prev' => [...], 'next' => [...]]
+ * where both always exist (wrapping at ends).
+ */
+function getPrevNext(string $currentKey, string $baseUrl = '/'): array {
+    $list = include __DIR__ . '/case_studies.php';
+    $keys = array_keys($list);
+    $count = count($keys);
+    $currentIndex = array_search($currentKey, $keys, true);
+
+    if ($currentIndex === false) {
+        // Fallback to first if somehow missing
+        $currentIndex = 0;
+    }
+
+    // Compute previous and next indices, wrapping with modulo
+    $prevIndex = ($currentIndex - 1 + $count) % $count;
+    $nextIndex = ($currentIndex + 1) % $count;
+
+    $prevKey = $keys[$prevIndex];
+    $nextKey = $keys[$nextIndex];
+
+    return [
+        'prev' => [
+            'url'   => $baseUrl . ltrim($list[$prevKey]['url'], '/'),
+            'label' => $list[$prevKey]['label'],
+        ],
+        'next' => [
+            'url'   => $baseUrl . ltrim($list[$nextKey]['url'], '/'),
+            'label' => $list[$nextKey]['label'],
+        ],
+    ];
+}
