@@ -394,17 +394,12 @@
 			<section id="section-design" class="py-6">				
 				<div class="container">
 					<div class="row">
-						<div class="col-12">
-							<img src="/resources/images/projects/blackberg-group/design-system/design-figma-ui.png" class="shadow-lg" />
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-12 col-lg-8 offset-lg-2 text-center">
+						<div class="col-12 col-lg-8 offset-lg-2 text-left">
 							<div class="content__title text-center mb-5">
-								<span class="h6 ls3 t600 uppercase brand-primary">3. Design</span><br />								
-								<h2 class="display-4 t100-desktop">Design System Foundations</h2>
+								<span class="h6 ls3 t600 uppercase brand-primary">4. Implementation</span><br />								
+								<h2 class="display-4 t100-desktop">Building It Out</h2>
 							</div>
-							<p>In building a cohesive and scalable design system, I focused on establishing a centralized Figma kit, leveraging global variables for quick updates, and creating reusable components that work across multiple screen sizes and states. These elements combined to provide a consistent user experience while accelerating the design-to-development process.</p>
+							<p>With the design architecture finalized, I partnered closely with the front-end development team to bring the system to life. Together we established a Next.js codebase and built reusable UI components, relying on Bootstrap 5 utilities for efficient layout and styling. Every component was documented in Storybook—complete with properties, usage guidelines, and code examples—so designers and developers could reference a single, authoritative source. Regular code reviews and disciplined Git workflows kept the implementation organized and ensured the design system evolved in step with project objectives.</p>
 						</div>
 					</div>
 				</div>

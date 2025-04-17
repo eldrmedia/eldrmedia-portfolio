@@ -23,4 +23,20 @@ return [
     'url'   => '/work/quorum/wrapped/',
     'label' => 'Quorum Wrapped',
   ],
+  'capture' => [
+    'url'   => '/work/project-2/',
+    'label' => 'Capture Mobile App',
+  ],  
+  'capture' => [
+    'url'   => '/work/roll-20/design-system',
+    'label' => 'Roll20 Design System',
+  ],  
+  'capture' => [
+    'url'   => '/work/chilld-bags',
+    'label' => 'Capture Mobile App',
+  ],  
+  'capture' => [
+    'url'   => '/work/foundation/',
+    'label' => 'eBizAutos Foundation',
+  ],        
 ];

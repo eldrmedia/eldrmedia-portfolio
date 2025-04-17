@@ -1,4 +1,4 @@
-<body class="stretched no-transition <?php print $CURRENT_PAGE;?>">
+<body class="stretched no-transition <?php print $CLIENT;?> <?php print $CURRENT_PAGE;?>">
 
 	<!-- Document Wrapper
 	============================================= -->
