@@ -3,6 +3,7 @@ $brand-primary: #006154;    	        // Green
 $brand-primary-light: #00C7AC;    	
 $brand-primary-lightest: #00C7AC;    	
 
+$brand-secondary-dark: #a2bc2f;
 $brand-secondary: #b5d334;	            // Electric Green
 $brand-secondary-light: #d8e69a;	    
 $brand-secondary-lightest: #eaf3d5;	    
@@ -21,6 +22,7 @@ $brand-tertiary-lightest: #A0B3D4;
     .bg-primary-light { background-color: $brand-primary-light; }
     .bg-primary-lightest { background-color: $brand-primary-lightest; }
 
+    .bg-secondary-dark { background-color: $brand-secondary-dark; }
     .bg-secondary { background-color: $brand-secondary; }
     .bg-secondary-light { background-color: $brand-secondary-light; }
     .bg-secondary-lightest { background-color: $brand-secondary-lightest; }
@@ -28,5 +30,18 @@ $brand-tertiary-lightest: #A0B3D4;
     .bg-tertiary { background-color: $brand-tertiary; }
     .bg-tertiary-light { background-color: $brand-tertiary-light; }
     .bg-tertiary-lightest { background-color: $brand-tertiary-lightest; }    
+
+
+    .nav-link {
+        border: 0;
+        &.active {
+            color: #000;
+            background-color: $brand-secondary;
+            border: 0; 
+        }
+        &:hover {
+            background-color: $brand-secondary-dark;
+        }
+    }
 
 }

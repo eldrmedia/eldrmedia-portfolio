@@ -11,6 +11,9 @@
 	
 	<link rel="stylesheet" href="/resources/css/swiper.css">	
 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+
 	<meta name="robots" content="noindex">
 	<meta name="robots" content="noimageindex">
 
@@ -391,21 +394,84 @@
 			</section>		
 
 
-			<section id="section-design" class="py-6">				
+			<section id="section-design" class="py-6 bg-tertiary dark">				
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-lg-8 offset-lg-2 text-left">
-							<div class="content__title text-center mb-5">
-								<span class="h6 ls3 t600 uppercase brand-primary">4. Implementation</span><br />								
+						<div class="col-12 col-lg-4 text-left">
+							<div class="content__title text-left mb-5">
+								<span class="h6 ls3 t600 uppercase brand-secondary">4. Implementation</span><br />								
 								<h2 class="display-4 t100-desktop">Building It Out</h2>
 							</div>
-							<p>With the design architecture finalized, I partnered closely with the front-end development team to bring the system to life. Together we established a Next.js codebase and built reusable UI components, relying on Bootstrap 5 utilities for efficient layout and styling. Every component was documented in Storybook—complete with properties, usage guidelines, and code examples—so designers and developers could reference a single, authoritative source. Regular code reviews and disciplined Git workflows kept the implementation organized and ensured the design system evolved in step with project objectives.</p>
+						</div>
+						<div class="col-12 col-lg-8">
+							<p>After finalizing the design architecture, I worked with the front‑end team to stand up a Next.js codebase and build reusable components with Bootstrap 5. Each element was documented in Storybook—complete with props, usage notes, and code snippets—to give the team a single source of truth. Regular Git‑based reviews kept implementation tightly aligned with project goals.</p>
+						</div>
+					</div>
+					<div class="row mt-3">
+						<div class="col-12">
+							<nav class="nav nav-pills flex-column flex-sm-row justify-content-center mb-3">
+								<button class="nav-link active mx-2" id="development-tab" data-toggle="tab" data-target="#development" type="button" role="tab" aria-controls="development" aria-selected="true">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
+  										<path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
+									</svg>
+									Development
+								</button>
+								<button class="nav-link mx-2" id="storybook-tab" data-toggle="tab" data-target="#storybook" type="button" role="tab" aria-controls="storybook" aria-selected="false">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book-half" viewBox="0 0 16 16">
+										<path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+									</svg>	
+									Storybook
+								</button>
+								<button class="nav-link mx-2" id="github-tab" data-toggle="tab" data-target="#github" type="button" role="tab" aria-controls="github" aria-selected="false">
+									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+										<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8"/>
+									</svg>
+									GitHub
+								</button>
+							</nav>							
+							<div class="bg-tertiary-light rounded shadow-lg p-5">
+								<div class="tab-content" id="implementation-tabs">
+									<div class="tab-pane fade show active" id="development" role="tabpanel" aria-labelledby="development-tab">
+										<div class="row">
+											<div class="col-12 col-md-6">
+												<h3>Front-End Development</h3>
+												<p>Working with our front-end developers, we set up a shared Next.js codebase and built a library of UI components using Bootstrap 5 utilities. We organized everything in a clear component hierarchy, making it easy for anyone on the team to reuse and scale pieces as new features rolled out.</p>
+											</div>
+											<div class="col-12 col-md-6">
+												<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" style="width: 100%; height: 400px;" />
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="storybook" role="tabpanel" aria-labelledby="storybook-tab">
+										<div class="row">
+											<div class="col-12 col-md-6">
+												<h3>Storybook Integration</h3>
+												<p>Together we turned Storybook into our living source of truth: every component now includes documented props, usage guidelines, and ready-to-copy code snippets. This shared hub lets designers preview states in real time and gives developers an authoritative reference for implementation details.</p>
+											</div>
+											<div class="col-12 col-md-6">
+												<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" style="width: 100%; height: 400px;" />
+											</div>
+										</div>
+									</div>
+									<div class="tab-pane fade" id="github" role="tabpanel" aria-labelledby="github-tab">
+										<div class="row">
+											<div class="col-12 col-md-6">
+												<h3>Collaboration & Version Control</h3>
+												<p>We relied on Git workflows and regular design-dev reviews to keep everyone aligned. Pull requests, paired code walkthroughs, and clear commit messages ensured that design intent and technical implementation stayed perfectly in sync with evolving business goals.</p>
+											</div>
+											<div class="col-12 col-md-6">
+												<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" style="width: 100%; height: 400px;" />
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 			</section>
 
-			<section id="section-final-thoughts" class="bg-dark dark py-6 d-none">
+			<section id="section-final-thoughts" class="bg-dark dark py-6">
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-md-6 mx-auto">
@@ -467,39 +533,22 @@
 
 
 <script>
-$(function(){
-	
-	initSwiper();
-	
-	function initSwiper(){
-	    var wireframeTitle = new Swiper('.wireframe-title', {
-			spaceBetween: 1,
-			centeredSlides: true,
-			slidesPerView: 'auto',
-			touchRatio: 1,
-			slideToClickedSlide: true,
-			observer: true,
-			observeParents: true			
-	    });
-	    var wireframeContent = new Swiper('.wireframe-content', {
-			direction: 'horizontal',
-			effect: 'slide',
-			observer: true,
-			observeParents: true,
-			preloadImages: false,
-			navigation: {
-			    nextEl: '.swiper-button-next',
-			    prevEl: '.swiper-button-prev',			
-			},
-		    lazy: {
-			    loadPrevNext: true,
-			    loadPreNextAmount: 1
-			}
-	    });
-		wireframeTitle.controller.control = wireframeContent;
-		wireframeContent.controller.control = wireframeTitle;		  	
-	}
-});
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Fade in each image as the user scrolls down the page
+    gsap.utils.toArray('.fade-image').forEach(function(image) {
+        gsap.from(image, {
+            opacity: 0,
+            y: 50, // Starts from 50px below
+            duration: 1,
+            scrollTrigger: {
+                trigger: image, // The trigger element is each image
+                start: 'top 80%', // Start the animation when the image reaches 80% of the viewport height
+                end: 'top 30%', // End the animation when the image reaches 30% of the viewport height
+                scrub: true, // Smooth the animation with the scroll position
+            }
+        });
+    });
 </script>
 
 
