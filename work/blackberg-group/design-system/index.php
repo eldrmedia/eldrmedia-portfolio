@@ -394,22 +394,22 @@
 			</section>		
 
 
-			<section id="section-design" class="py-6 bg-tertiary dark">				
+			<section id="section-design" class="py-6 bg-primary dark">				
 				<div class="container">
 					<div class="row">
 						<div class="col-12 col-lg-4 text-left">
 							<div class="content__title text-left mb-5">
-								<span class="h6 ls3 t600 uppercase brand-secondary">4. Implementation</span><br />								
+								<span class="h6 ls3 t600 uppercase brand-primary">4. Implementation</span><br />								
 								<h2 class="display-4 t100-desktop">Building It Out</h2>
 							</div>
 						</div>
 						<div class="col-12 col-lg-8">
-							<p>After finalizing the design architecture, I worked with the front‑end team to stand up a Next.js codebase and build reusable components with Bootstrap 5. Each element was documented in Storybook—complete with props, usage notes, and code snippets—to give the team a single source of truth. Regular Git‑based reviews kept implementation tightly aligned with project goals.</p>
+							<p>After finalizing the design architecture, I worked with the front-end team to stand up a Next.js codebase and build reusable components with Bootstrap 5. Each element was documented in Storybook—complete with props, usage notes, and code snippets—to give the team a single source of truth. Regular Git‑based reviews kept implementation tightly aligned with project goals.</p>
 						</div>
 					</div>
 					<div class="row mt-3">
 						<div class="col-12">
-							<nav class="nav nav-pills flex-column flex-sm-row justify-content-center mb-3">
+							<nav class="nav nav-pills nav-pills--dark flex-column flex-sm-row justify-content-center mb-3">
 								<button class="nav-link active mx-2" id="development-tab" data-toggle="tab" data-target="#development" type="button" role="tab" aria-controls="development" aria-selected="true">
 									<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-braces" viewBox="0 0 16 16">
   										<path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6M13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6"/>
@@ -429,7 +429,7 @@
 									GitHub
 								</button>
 							</nav>							
-							<div class="bg-tertiary-light rounded shadow-lg p-5">
+							<div class="bg-tertiary rounded shadow-lg p-5 dark">
 								<div class="tab-content" id="implementation-tabs">
 									<div class="tab-pane fade show active" id="development" role="tabpanel" aria-labelledby="development-tab">
 										<div class="row">
@@ -438,7 +438,7 @@
 												<p>Working with our front-end developers, we set up a shared Next.js codebase and built a library of UI components using Bootstrap 5 utilities. We organized everything in a clear component hierarchy, making it easy for anyone on the team to reuse and scale pieces as new features rolled out.</p>
 											</div>
 											<div class="col-12 col-md-6">
-												<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" style="width: 100%; height: 400px;" />
+												<img src="/resources/images/projects/blackberg-group/design-system/implementation-dev.png" />
 											</div>
 										</div>
 									</div>

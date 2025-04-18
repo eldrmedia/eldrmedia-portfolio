@@ -3,20 +3,7 @@
 -----------------------------------------------------------------------------------*/
 @use 'sass:color';
 
-$brand-primary: #006154;    	// Green
-$brand-secondary: #A88F4D;	    // Brass
-$brand-tertiary: #7259EF;	    // Ultraviolet
-$brand-warning: #FF994D;		        // Orange
-$brand-success: #31D158;		        // Green
-
-
 .blackberg-group {
-
-    .brand-primary { color: $brand-primary; }
-    .brand-secondary { color: $brand-secondary; }
-    .brand-tertiary { color: $brand-tertiary; }
-    .brand-warning { color: $brand-warning; }
-    .brand-success { color: $brand-success; }
 
     .hero {
         position: relative;
@@ -62,7 +49,7 @@ $brand-success: #31D158;		        // Green
         text-decoration: underline !important;
     
         &:hover {
-            color: color.adjust($brand-primary, $lightness: 5%);
+            color: $brand-primary-light;
         }
     }
 

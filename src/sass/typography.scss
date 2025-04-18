@@ -19,26 +19,30 @@ dl, dt, dd, ol, ul, li {
 	overflow:hidden;
 }
 
-::selection {
-	background: $theme-color;
-	color: #FFF;
-	text-shadow: none;
-}
+// ::selection {
+// 	background: $theme-color;
+// 	color: #FFF;
+// 	text-shadow: none;
+// }
 
-::-moz-selection {
-	background: $theme-color; /* Firefox */
-	color: #FFF;
-	text-shadow: none;
-}
+// ::-moz-selection {
+// 	background: $theme-color; /* Firefox */
+// 	color: #FFF;
+// 	text-shadow: none;
+// }
 
-::-webkit-selection {
-	background: $theme-color; /* Safari */
-	color: #FFF;
-	text-shadow: none;
-}
+// ::-webkit-selection {
+// 	background: $theme-color; /* Safari */
+// 	color: #FFF;
+// 	text-shadow: none;
+// }
 
-:active,
-:focus { outline: none !important; }
+:active {outline: 0;}
+
+:focus { 
+	outline: none !important;
+  	box-shadow: 0 0 0 4px $theme-color;
+}
 
 
 /* ----------------------------------------------------------------

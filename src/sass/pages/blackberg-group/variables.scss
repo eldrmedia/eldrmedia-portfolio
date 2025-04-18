@@ -1,6 +1,8 @@
+@use 'sass:color';
+
 
 $brand-primary: #006154;    	        // Green
-$brand-primary-light: #00C7AC;    	
+$brand-primary-light: color.adjust($brand-primary, $lightness: 5%);  	
 $brand-primary-lightest: #00C7AC;    	
 
 $brand-secondary-dark: #a2bc2f;
@@ -32,16 +34,34 @@ $brand-tertiary-lightest: #A0B3D4;
     .bg-tertiary-lightest { background-color: $brand-tertiary-lightest; }    
 
 
-    .nav-link {
-        border: 0;
-        &.active {
-            color: #000;
-            background-color: $brand-secondary;
-            border: 0; 
-        }
-        &:hover {
-            background-color: $brand-secondary-dark;
+.nav-pills {
+    
+    &--dark {
+
+        .nav-link {
+            background-color: #ddd;
+            color: #222;
+            border: 0;
+            cursor: pointer;
+
+            &.active {
+                color: #222;
+                background-color: $brand-secondary;
+                border: 0; 
+                &:hover {
+                    background-color: $brand-secondary;
+                }
+            }
+            &:hover {
+                background-color: #eee;
+            }    
         }
     }
+}
+
+:focus { 
+	outline: none !important;
+  	box-shadow: 0 0 0 4px rgba(11, 163, 143, .4);
+}
 
 }
