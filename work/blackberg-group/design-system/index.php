@@ -277,7 +277,7 @@
 										</div>
 										<div class="fbox-content">
 											<h3>At Scale</h3>
-											<p>Establish a scalable design system architecture that can be applied to multiple internatl projects.</p>
+											<p>Establish a scalable design system architecture that can be applied to multiple internal projects.</p>
 										</div>
 									</div>
 								</div>
@@ -338,8 +338,8 @@
 			<section id="section-design" class="py-6">				
 				<div class="container">
 					<div class="row">
-						<div class="col-12">
-							<img src="/resources/images/projects/blackberg-group/design-system/design-figma-ui.png" class="shadow-lg" />
+						<div class="col-8 offset-2">
+							<img src="/resources/images/projects/blackberg-group/design-system/section-design-system-foundations.jpg" class="shadow-lgs" />
 						</div>
 					</div>
 					<div class="row">
@@ -371,12 +371,10 @@
 					<div class="row align-items-center py-4">
 						<div class="col-12 col-md-12 col-lg-5 offset-0 offset-md- offset-lg-1 order-0 order-lg-1">
 							<h4 class="h1">Figma Variables</h4>															
-							<p>To maintain consistency and simplify global updates, I incorporated Figma Variables for colors and text styles. With a single change, I could update the entire system—saving hours of manual editing and preventing discrepancies across multiple screens or components.</p>
+							<p>To maintain consistency and simplify global updates, I incorporated Figma Variables for colors and text styles. With a single change, I can update the entire system—saving hours of manual editing and preventing discrepancies across multiple screens or components.</p>
 						</div>
 						<div class="col-12 col-md-8 col-lg-6  order-1 order-lg-0 offset-0 offset-md-2 offset-lg-0">
-							<div class="shadow" style="margin-bottom: 30%; background: url('/resources/images/projects/quorum/design-system/figma-border.png') no-repeat top left; background-size: cover;">
-								<img src="/resources/images/projects/quorum/design-system/figma-ds-buttons.png" class="box-shadow-light img-fluid" style="bottom: -15%; margin-bottom: -15%;" data-parallax='{"y": 25, "smoothness": 20}' />	
-							</div>			
+								<img src="/resources/images/projects/blackberg-group/design-system/design-figma-ui.png" class="box-shadow-light img-fluid" style="bottom: -15%; margin-bottom: -15%;" data-parallax='{"y": 25, "smoothness": 20}' />	
 						</div>						
 					</div>	
 					<div class="row align-items-center py-4">
@@ -495,7 +493,7 @@
 							<div class="row">					
 
 								<div class="col-4 col-sm-3">
-									<a href="<?= htmlspecialchars($nav['prev']['url']) ?>" class="text-white">
+									<a href="<?= htmlspecialchars($nav['prev']['url']) ?>" class="text-white d-block">
 										<i class="icon-arrow1-left icon-1x d-block mb-3"></i>
 										<h5 class="h5 m-0 text-white small m-0"><?= htmlspecialchars($nav['prev']['label']) ?></h5>
 									</a>

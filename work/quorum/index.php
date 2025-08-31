@@ -1,4 +1,7 @@
 <?php include("../../includes_eldrmedia/_eldrmedia_config.php");?>
+<?php include("../../includes_eldrmedia/functions.php");?>
+<?php $crumbs = getBreadcrumbs($BASE_URL); ?>
+<?php $nav = getPrevNext($CURRENT_PAGE, $BASE_URL); ?>
 
 <!DOCTYPE html>
 <html dir="ltr" lang="en-US">
@@ -1760,6 +1763,25 @@
 		<!-- Content
 		============================================= -->
 		<section id="content">
+			<nav aria-label="breadcrumb">
+				<div class="container">
+					<ol class="breadcrumb">
+						<?php foreach ($crumbs as $idx => $crumb): ?>
+						<?php if ($idx < count($crumbs) - 1): // not last ?>
+							<li class="breadcrumb-item">
+							<a href="<?= htmlspecialchars($crumb['url']) ?>">
+								<?= htmlspecialchars($crumb['label']) ?>
+							</a>
+							</li>
+						<?php else: // last segment, active ?>
+							<li class="breadcrumb-item active" aria-current="page">
+							<?= htmlspecialchars($crumb['label']) ?>
+							</li>
+						<?php endif; ?>
+						<?php endforeach; ?>
+					</ol>
+				</div>
+			</nav>			
 
 			<section id="section-about" class="py-5">
 
@@ -1922,23 +1944,23 @@
 							<div class="row">
 
 								<div class="col-4 col-sm-3">
-									<a href="/work/foundation/" class="text-white">
+									<a href="<?= htmlspecialchars($nav['prev']['url']) ?>" class="text-white">
 										<i class="icon-arrow1-left icon-1x d-block mb-3"></i>
-										<h5 class="h5 m-0 text-white m-0">Previous</h5>
+										<h5 class="h5 m-0 text-white small m-0"><?= htmlspecialchars($nav['prev']['label']) ?></h5>
 									</a>
 								</div>
 
 								<div class="col-4 col-sm-6">
 									<a href="/work/" class="text-white">
 										<i class="icon-star icon-1x d-block mb-3"></i>
-										<h5 class="h5 text-white m-0">View All</h5>
+										<h5 class="h5 text-white small m-0">View All</h5>
 									</a>
 								</div>
 
 								<div class="col-4 col-sm-3">
-									<a href="/work/chilld-bags/" class="text-white">
+									<a href="<?= htmlspecialchars($nav['next']['url']) ?>" class="text-white">
 										<i class="icon-arrow1-right icon-1x d-block mb-3"></i>
-										<h5 class="h5 m-0 text-white m-0">Next</h5>
+										<h5 class="h5 m-0 text-white small m-0"><?= htmlspecialchars($nav['next']['label']) ?></h5>
 									</a>
 								</div>
 

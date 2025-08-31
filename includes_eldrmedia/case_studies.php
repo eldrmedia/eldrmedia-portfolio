@@ -3,6 +3,10 @@
 
 return [
   // key matches your $CURRENT_PAGE values
+  'blackberg-group' => [
+    'url'   => '/work/blackberg-group/',
+    'label' => 'Blackberg Group',
+  ],
   'blackberg-group-design-system' => [
     'url'   => '/work/blackberg-group/design-system/',
     'label' => 'Blackberg Group Design System',
@@ -14,6 +18,10 @@ return [
   'blackberg-group-website' => [
     'url'   => '/work/blackberg-group/website/',
     'label' => 'Blackberg Group Website',
+  ],
+  'quorum' => [
+    'url'   => '/work/quorum/',
+    'label' => 'Quorum',
   ],
   'quorum-design-system' => [
     'url'   => '/work/quorum/design-system/',
@@ -27,15 +35,15 @@ return [
     'url'   => '/work/project-2/',
     'label' => 'Capture Mobile App',
   ],  
-  'capture' => [
+  'roll20-design-system' => [
     'url'   => '/work/roll-20/design-system',
     'label' => 'Roll20 Design System',
   ],  
-  'capture' => [
+  'chilld-bags' => [
     'url'   => '/work/chilld-bags',
-    'label' => 'Capture Mobile App',
+    'label' => 'Chilld Bags',
   ],  
-  'capture' => [
+  'foundation' => [
     'url'   => '/work/foundation/',
     'label' => 'eBizAutos Foundation',
   ],        
