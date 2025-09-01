@@ -1,21 +1,9 @@
 /*-----------------------------------------------------------------------------------
 	blackberg.scss
 -----------------------------------------------------------------------------------*/
-
-$brand-primary: #006154;    	// Green
-$brand-secondary: #A88F4D;	    // Brass
-$brand-tertiary: #7259EF;	    // Ultraviolet
-$brand-warning: #FF994D;		        // Orange
-$brand-success: #31D158;		        // Green
-
+@use 'sass:color';
 
 .blackberg-group {
-
-    .brand-primary { color: $brand-primary; }
-    .brand-secondary { color: $brand-secondary; }
-    .brand-tertiary { color: $brand-tertiary; }
-    .brand-warning { color: $brand-warning; }
-    .brand-success { color: $brand-success; }
 
     .hero {
         position: relative;
@@ -56,5 +44,13 @@ $brand-success: #31D158;		        // Green
 
     }
 
+    a.link {
+        color: $brand-primary;
+        text-decoration: underline !important;
+    
+        &:hover {
+            color: $brand-primary-light;
+        }
+    }
 
 }

@@ -39,28 +39,39 @@
 	}
 }
 
+// .breadcrumb {
+// 	position: absolute !important;
+// 	width: auto !important;
+// 	top: 50% !important;
+// 	left: auto !important;
+// 	right: 15px !important;
+// 	margin: -10px 0 0 0 !important;
+// 	background-color: transparent !important;
+// 	padding: 0 !important;
+// 	font-size: 12px;
+// }
+
 .breadcrumb {
-	position: absolute !important;
-	width: auto !important;
-	top: 50% !important;
-	left: auto !important;
-	right: 15px !important;
-	margin: -10px 0 0 0 !important;
-	background-color: transparent !important;
-	padding: 0 !important;
-	font-size: 12px;
+	font-size: .8rem;
+	margin: 0;
+	background: transparent;
+	justify-content: center;
+	a {
+		color: #000;
+		text-decoration: underline !important;
+	}
 }
 
 body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #header.transparent-header + #page-title.page-title-parallax .breadcrumb { margin-top: 35px !important; }
 
-.breadcrumb {
-	a { color: #555;
-		&:hover { color: $theme-color; }
-	}
-	i { width: auto !important; }
-}
+// .breadcrumb {
+// 	a { color: #555;
+// 		&:hover { color: $theme-color; }
+// 	}
+// 	i { width: auto !important; }
+// }
 
 /* Page Title - Dark
 -----------------------------------------------------------------*/
